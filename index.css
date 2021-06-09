@@ -1,0 +1,110 @@
+
+*{ box-sizing: border-box;}
+
+body{
+    font-family: 'Lato', sans-serif;       
+    margin: 10px;
+    width: 100%;
+    padding: 10px;  
+    font-size: 1rem;  
+}
+header{
+    display:inline-block;
+    align-items: center;
+}
+/* estilos para el encabezado */
+.encabezado{   
+    background:rgba(0, 0,0,0.5);
+    color: #f1f1f1;
+    width: 100%;
+    height: 800px;
+    padding: 20px;
+    z-index: 0;
+    background-image:url(iguana3.jpeg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.encabezado h1{
+    text-align: center;
+    margin-top: 0;
+    margin-left: 0;
+    position:  ;
+}
+
+/* estilo para la nav-bar*/
+nav{
+    margin-top: 0;
+    margin-left: 0;
+    background-color: rgba(119, 117, 116, 0.555);    
+}
+ul{
+    margin-left:auto;
+    margin-right: auto;
+    list-style-type: none;
+    padding: 0;
+    overflow: hidden;
+}
+li{  
+    float: left;
+    margin: 10px;     
+}
+.icono{float: right;}
+.navar a{
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    /* background-color:rgba(30, 147, 243, 0.568) ;*/
+    padding: 5px 5px;
+}
+.navar a:hover{
+    background-color:rgb(255, 255, 255) ;
+    color: rgb(20, 145, 247);
+}
+
+.icono_redes{
+    width: 25px;
+    height: 25px;
+    background-color: rgba(128, 128, 128, 0.541);
+    display: inline-block;  
+}
+.multimedia{
+    width: 100%;
+    height: 400px;
+    margin: 0 auto;
+    overflow: scroll;
+    
+}
+.shows{
+    width: 400px;
+    height: 200px;
+    background-color: skyblue;
+    padding: 10px;
+    margin-top: 0;
+    margin-left: 0;
+    position:relative;
+    display: inline-block;
+    flex-wrap: wrap;
+}
+/* estilos para tablas*/
+#carta table{
+    border-collapse: collapse;
+}
+
+/* estilos para el form */
+
+.contentForm{
+    
+    margin-top: 0;
+    margin-left: 0;
+    width: 50%;
+}
+.textBox{
+    width: 100%;
+    height: 30px;
+}
+textarea{width: 100%;}
+#ciudad{
+    width: 100%;
+    height: 30px;
+}

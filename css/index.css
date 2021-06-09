@@ -1,0 +1,118 @@
+
+
+body{
+    font-family: 'Lato', sans-serif;       
+    margin: 10px;
+    width: 100%;
+    padding: 10px;  
+    font-size: 1rem;  
+    background-image: url(img/fondo.webp);
+    background-color: black;
+    color: blanchedalmond;
+}
+header{
+    display:inline-block;
+    align-items: center;
+    position: fixed;
+}
+/* estilos para el encabezado */
+.encabezado{   
+    background:rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    height: 600px;
+    padding: 20px;
+    z-index: 0;
+    background-image:url(img/iguana3.webp) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.encabezado h1{
+    text-align: center;
+    margin-top: 50px;
+    margin-left: 0; 
+    background-color: rgb(248, 212, 7);
+    color: black;
+}
+
+/* estilo para la nav-bar*/
+nav{
+    margin-top: 0;
+    margin-left: 0;
+    background-color: rgba(119, 117, 116, 0.555);    
+}
+ul{
+    margin-left:auto;
+    margin-right: auto;
+    list-style-type: none;
+    padding: 0;
+    overflow: hidden;
+}
+li{  
+    float: left;
+    margin: 10px;     
+}
+.icono{float: right;
+margin-right: 100px;}
+.navar a{
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    /* background-color:rgba(30, 147, 243, 0.568) ;*/
+    padding: 5px 5px;
+    
+}
+.navar a:hover{
+    background-color: rgb(248, 212, 7);
+    color: rgb(8, 8, 8);
+}
+
+.icono_redes{
+    width: 25px;
+    height: 25px;
+    background-color: rgba(128, 128, 128, 0.541);
+    display: inline-flex;  
+}
+
+.multimedia{
+    width: 100%;
+    height: 400px;
+    margin: 0 auto;    
+    
+}
+.shows{
+    display: inline-flex;
+    align-content: center;
+    flex-wrap: wrap;    
+    background-color: skyblue;
+    gap: 25px;
+  /*  margin: 25px;*/
+    width: 200px;
+    height:200px;
+}
+/* estilos para tablas*/
+#carta table{
+    border-collapse: collapse;
+    height: 200px;
+    width:auto ;
+}
+#carta{
+    height: 600px;
+    overflow: scroll;    
+}
+
+/* estilos para el form */
+
+footer{
+    
+    background-color: rgb(248, 212, 7);
+    color:rgb(19, 18, 18);
+    font-size: 1em;
+    width: 100%;
+    height: 100px;
+    bottom: 0;
+    margin: 0 10 0 10;
+    position: fixed;
+}
