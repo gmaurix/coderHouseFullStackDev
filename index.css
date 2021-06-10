@@ -1,55 +1,76 @@
-
-*{ box-sizing: border-box;}
-
-body{
-    font-family: 'Lato', sans-serif;       
-    margin: 10px;
-    width: 100%;
-    padding: 10px;  
-    font-size: 1rem;  
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
-header{
-    display:inline-block;
+
+body {
+    background: url(img/fondo.webp);    
+    background-attachment: fixed;
+    font-family: 'Lato', sans-serif;
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+}
+
+.contenido {
+    display: flex;
+    align-content: center;
+    margin: 10px;
+    flex-wrap: wrap;
+    ;
+}
+
+header {
+    display: inline-block;
     align-items: center;
 }
+
 /* estilos para el encabezado */
-.encabezado{   
-    background:rgba(0, 0,0,0.5);
+.encabezado {
+    background: rgba(0, 0, 0, 0.5);
     color: #f1f1f1;
     width: 100%;
-    height: 800px;
+    height: 400px;
     padding: 20px;
     z-index: 0;
-    background-image:url(iguana3.jpeg) ;
+    background-image: url(img/iguana3.webp);
     background-repeat: no-repeat;
     background-size: cover;
 }
-.encabezado h1{
+
+.encabezado h1 {
     text-align: center;
     margin-top: 0;
     margin-left: 0;
-    position:  ;
+
 }
 
 /* estilo para la nav-bar*/
-nav{
+nav {
     margin-top: 0;
     margin-left: 0;
-    background-color: rgba(119, 117, 116, 0.555);    
+    background-color: rgba(119, 117, 116, 0.555);
 }
-ul{
-    margin-left:auto;
+
+ul {
+    margin-left: auto;
     margin-right: auto;
     list-style-type: none;
     padding: 0;
     overflow: hidden;
 }
-li{  
+
+li {
     float: left;
-    margin: 10px;     
+    margin: 10px;
 }
-.icono{float: right;}
-.navar a{
+
+.icono {
+    float: right;
+}
+
+.navar a {
     display: block;
     color: white;
     text-align: center;
@@ -57,54 +78,144 @@ li{
     /* background-color:rgba(30, 147, 243, 0.568) ;*/
     padding: 5px 5px;
 }
-.navar a:hover{
-    background-color:rgb(255, 255, 255) ;
+
+.navar a:hover {
+    background-color: rgb(255, 255, 255);
     color: rgb(20, 145, 247);
 }
 
-.icono_redes{
+.icono_redes {
     width: 25px;
     height: 25px;
     background-color: rgba(128, 128, 128, 0.541);
-    display: inline-block;  
+    display: inline-block;
 }
-.multimedia{
+
+/*ESTILO PARA LA SECCION Galeria*/
+.galeria {
     width: 100%;
-    height: 400px;
-    margin: 0 auto;
-    overflow: scroll;
+    height: 500px;   
+    display: flex;
+    align-content: center;
+  
+    background-color: aquamarine;
+}
+
+.galeria__shows {
+    width: 300px;
+    height: 190px;    
+    background-color: skyblue;
+    padding: 80px;
+    margin-top: 0;
+    margin-left: 0;
+   
     
 }
-.shows{
-    width: 400px;
-    height: 200px;
-    background-color: skyblue;
+
+/* ESTILOS PARA SECCION Carta*/
+.carta {
+    width: 100%;
+    height: 600px;
+    background-color: coral;
+}
+
+#carta table {
+    border-collapse: collapse;
+
+}
+
+
+/* ESTILOS PARA SECCION Contacto */
+.contacto {
+    width: 100%;
+    height: 500px;  
     padding: 10px;
     margin-top: 0;
     margin-left: 0;
-    position:relative;
-    display: inline-block;
+    position: relative;
+    display: flex;
     flex-wrap: wrap;
-}
-/* estilos para tablas*/
-#carta table{
-    border-collapse: collapse;
-}
-
-/* estilos para el form */
-
-.contentForm{
     
-    margin-top: 0;
-    margin-left: 0;
-    width: 50%;
+    
 }
-.textBox{
-    width: 100%;
-    height: 30px;
+.contacto__titlo{
+    float: left;
+    padding: 50px;
+    float: left;
 }
-textarea{width: 100%;}
-#ciudad{
+
+.contacto__mapa {
+    width: 200px;
+  }
+.contacto__Form {
+    width: 100px;
+    height: 500px;
+    width: 400px;    
+    /* background-color: black; */
+}
+
+.textBox {
+    border: 0;
+    color: rgb(120, 121, 122);
+    border-bottom: darkgoldenrod solid 0.5px;
+    flex-wrap: wrap;
+    margin: 2px;
+    padding: 10px;
     width: 100%;
-    height: 30px;
+    height: 50px;
+}
+
+.textBox:hover {
+    border-color: rgba(250, 194, 110, 0.664);
+}
+
+.textarea:hover {
+    border-color: rgba(250, 194, 110, 0.664);
+}
+
+#ciudad:hover {
+    border-color: rgba(250, 194, 110, 0.664);
+}
+
+.textarea {
+    color: rgb(120, 121, 122);
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    margin-top: 2px;
+    border: darkgoldenrod solid 0.5px;
+}
+
+#ciudad {
+    color: rgb(120, 121, 122);
+    border: 0;
+    border-bottom: darkgoldenrod solid 1 px;
+    width: 100%;
+    height: 50px;
+}
+
+.btn {
+
+    background-color: transparent;
+    color: rgb(8, 8, 8);
+    border: 2px solid rgb(255, 255, 255);
+    border: solid 1px lightslategray;
+    border-radius: 10px;
+    width: 90px;
+    height: 50px;
+}
+
+.btn:hover {
+    background-color: rgb(248, 212, 7);
+    color: rgb(8, 8, 8);
+    border: solid 1px rgb(248, 212, 7);
+}
+
+
+
+/* ESTILOS PARA EL Footer*/
+
+footer {
+    clear: both;
+   
 }
