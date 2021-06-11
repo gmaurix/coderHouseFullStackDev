@@ -5,7 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap"rel="stylesheet"    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/index.css" />
 
@@ -14,9 +17,9 @@
   <!--La idea para el proyecto es hacer un sitio web responsive, de una sola pagina, para un bar -->
 
   <body>
-    <header class="encabezado">
+    <header class="encabezado" id="inicio">
       <!--comienzo de header-->
-      <h1 class="encabezado__titulo">Bienvenido a Iguana Bar</h1>
+      <h1 class="encabezado__titulo">Iguana Bar</h1>
       <nav class="encabezado__navar">
         <ul>
           <!-- barra de navegacion -->
@@ -42,13 +45,12 @@
     <!--comienzo de content-->
     <main class="contenido">
       <section
-        class="inicio"
-        id="inicio"
+        class="inicio"   
         data-type="background"
         data-speed="10"
       >
-        <h2 class="inicio--titulo">Bienvenidos</h2>
-        <article class="inicio--info">
+        <h2 class="inicio__titulo">Bienvenidos</h2>
+        <article class="inicio__info">
           <p>
             Abrimos nuestras puertas en el 2002, y desde entonces nuestro
             principal objetivo, <br />
@@ -57,14 +59,15 @@
           </p>
         </article>
       </section>
+
       <section
         class="nosotros"
         id="nosotros"
         data-type="background"
         data-speed="10"
       >
-        <h2 class="nosotros--titulo">Nosotros</h2>
-        <article class="nosotros--definicion">
+        <h2 class="nosotros__titulo">Nosotros</h2>
+        <article class="nosotros__titulo--definicion">
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. <br />
             Dolores eaque voluptates eum, non maxime aut inventore, aliquid sunt
@@ -73,13 +76,25 @@
           </p>
         </article>
       </section>
+
       <section class="galeria" id="galeria">
-        <h2>Galería</h2>
-        <div class="galeria__shows">1</div>
-        <div class="galeria__shows">2</div>
-        <div class="galeria__shows">3</div>
-        <div class="galeria__shows">4</div>
-        <div class="galeria__shows">5</div>
+        <h2 class="galeria__titulo">Galería</h2>
+        <div class="galeria__shows">
+          <img  class="galeria__shows--img" src="img/iguana/abiert_fuera.jpeg" alt="bar con gente">
+          <span class="galeria__shows--descripcion">
+              Verano 2019
+          </span>
+        </div>
+        <div class="galeria__shows">
+          <img class="galeria__shows--img" src="img/iguana/barra.jpg" alt="bar con gente">
+        </div>
+        <div class="galeria__shows">
+          <img class="galeria__shows--img" src="img/iguana/picada.jpg" alt="bar con gente">
+        </div>
+        <div class="galeria__shows">
+          <img class="galeria__shows--img" src="img/iguana/calle.jpeg" alt="bar con gente">
+        </div>
+       
       </section>
       <section class="carta" id="carta">
         <h2 class="carta__titulo">Carta</h2>
@@ -111,6 +126,14 @@
             method="post"
             enctype="multipart/form-data"
           >
+          <input
+              class="textBox"
+              type="text"
+              name="apellido"
+              placeholder="Apellido"
+              id="apel"
+              required
+            />
             <input
               class="textBox"
               type="text"
@@ -119,25 +142,14 @@
               id="nomb"
               required
             />
-
-            <input
-              class="textBox"
-              type="text"
-              name="apellido"
-              placeholder="Apellido"
-              id="apel"
-              required
-            />
-
             <input
               class="textBox"
               type="email"
               name=""
-              placeholder="Tu Email"
+              placeholder="Email"
               id="mail"
               required
             />
-
             <input
               class="textBox"
               type="tel"
@@ -146,9 +158,8 @@
               id="telef"
               required
             />
-
             <select name="ciudad" id="ciudad" required>
-              <option value="" disabled selected hidden>Ciudad</option>
+              <option value="" disabled selected hidden> Ciudad</option>
               <option value="">Córdoba</option>
               <option value="">Carlos Paz</option>
               <option value="">Rio de Janeiro</option>
@@ -164,7 +175,7 @@
             <input class="btn" type="reset" value="Limpiar" />
           </form>
         </div>
-        <div class="contacto__mapa">
+        <div class="contacto__form">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d963.3984083772168!2d-65.08901290842222!3d-31.31860231405534!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x942d01dd14645dcb%3A0x17cc655a1488cf39!2sIguana%20Bar%20Salsacate!5e0!3m2!1ses!2sar!4v1623280438064!5m2!1ses!2sar"
             width="400"
@@ -175,11 +186,8 @@
           ></iframe>
         </div>
       </section>
-    </main>
-    <!--final de content-->
-    <footer class="footer">
-      <!--COMIENZO footer-->
-
+    </main><!--final de content-->
+    <footer class="footer"><!--COMIENZO footer-->
       <div class="footer__info">
         <ul>
           <li class="footer__info--item">
@@ -213,7 +221,6 @@
         </p>
         <p>Diego Mauricio Gautero - Coderhouse</p>
       </div>
-    </footer>
-    <!--FINAL footer-->
+    </footer><!--FINAL footer-->
   </body>
 </html>

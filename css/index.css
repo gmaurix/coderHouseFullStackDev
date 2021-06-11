@@ -15,9 +15,9 @@ body {
 .encabezado {
   color: #f1f1f1;
   width: 100%;
-  height: 600px;  
+  height: 600px;
   z-index: 0;
-  background-image: url(../img/iguana3.webp);
+  background-image: url(../img/iguana/barra.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -55,34 +55,69 @@ body {
 }
 
 .contenido {
-    display: flex;
-    align-content: center;
-    flex-wrap: wrap;
-    background: url(../img/fondo.webp);
-    background-attachment: fixed;
-    background-repeat: repeat;
-    background-color: black;
-    color: white;
-  }
+  display: flex;
+  align-content: center;
+  flex-wrap: wrap;
+  background: url(../img/fondo.webp);
+  background-attachment: fixed;
+  background-repeat: repeat;
+  background-color: black;
+  color: white;
+}
 /*ESTILO PARA LA SECCION Inicio*/
-.inicio--info {
+.inicio__titulo {
   margin: 10px;
 }
+.inicio__info {
+  margin: 10px;
+}
+/* ESTILO PARA SECCION Nosotros*/
+.nosotros{
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+
+}
+.nosotros__titulo{
+  margin: 10px;
+}
+.nosotros__titulo--definicion{
+  margin: 10px;
+}
+
+
 /*ESTILO PARA LA SECCION Galeria*/
 .galeria {
+  margin-top: 10px;
   width: 100%;
   height: 500px;
-  text-align: center;
+  /* text-align: center;
   display: flex;
-  flex-wrap: wrap;
-    
+  flex-wrap: wrap; */
+  overflow: hidden;
+}
+.galeria__titulo{
+ margin:10px;
 }
 
 .galeria__shows {
-  width: 200px;
-  height: 100px;
-  background-color: skyblue;
- 
+  width: 300px;
+  height: 300px;
+  float: left;
+  margin: 2px;
+  
+}
+.galeria__shows--img{
+  width: 100%;
+  height: 60%;
+  margin: 10px;
+}
+.galeria__shows--descripcion{
+  background-color:rgb(248, 212, 7) ;
+  color: black;
+  text-align: center;
+  font-weight: bold;
+  margin: 10px;
 }
 
 /* ESTILOS PARA SECCION Carta*/
@@ -91,50 +126,44 @@ body {
   height: 600px;
   text-align: center;
 }
-.carta__titulo{
-    width: 100%;
+.carta__titulo {
+  width: 100%;
 }
 
 .carta__menu--variedad {
-    
-    width:500px;
-    height: 50px;    
-    background-color: rgb(224, 194, 24);
-    color:black;
- }
- 
+  width: 500px;
+  height: 50px;
+  background-color: rgb(224, 194, 24);
+  color: black;
+}
 
 /* ESTILOS PARA SECCION Contacto */
 .contacto {
+  text-align: center;
   width: 100%;
-  height: 500px;
+  height: 600px;
   padding: 10px;
   margin-top: 0;
   margin-left: 0;
   position: relative;
-  display: flex;
-  flex-wrap: wrap;
+  display: inline;
+  overflow: hidden;
 }
-.contacto__titlo {
-  float: left;
-  padding: 50px;
-  float: left;
-}
-.contacto__mapa {
-  width: 200px;
-  margin-left: 25px;
+.contacto__titulo{
+  margin: 10px;
+  ;
 }
 .contacto__form {
-  width: 100px;
-  height: 500px;
+  height: 450px;
   width: 400px;
-  /* background-color: black; */
+  float: left;
+  margin-left: 25px;
 }
 
 .textBox {
   border: 0;
   background-color: transparent;
-  color: rgb(248, 250, 252);
+  color: rgb(255, 255, 255);
   border-bottom: darkgoldenrod solid 0.5px;
   flex-wrap: wrap;
   margin: 2px;
@@ -144,7 +173,7 @@ body {
 }
 
 .textBox:hover {
-  border-color: rgba(250, 194, 110, 0.664);
+  border-color: rgba(250, 248, 110, 0.664);
 }
 
 .textarea:hover {
@@ -156,7 +185,8 @@ body {
 }
 
 .textarea {
-  color: rgb(120, 121, 122);
+  color: rgb(255, 255, 255);
+  background-color: transparent;
   width: 100%;
   height: 100px;
   padding: 10px;
@@ -165,18 +195,23 @@ body {
 }
 
 #ciudad {
-  color: rgb(120, 121, 122);
+  color: rgb(255, 255, 255);
   border: 0;
   border-bottom: darkgoldenrod solid 1 px;
   width: 100%;
   height: 50px;
+  background: transparent;
+}
+#ciudad option{
+  color:rgb(255, 255, 255);
+  background: black;
 }
 
 .btn {
   background-color: transparent;
   color: rgb(255, 230, 7);
-  border: 2px solid rgb(255, 255, 255);
-  border: solid 1px lightslategray;
+  letter-spacing: 2px;  
+  border: solid 1px rgb(17, 17, 17);
   border-radius: 10px;
   width: 90px;
   height: 50px;
@@ -193,7 +228,7 @@ body {
 .footer {
   clear: both;
   text-align: center;
-  background-color: rgb(248, 212, 7);
+  background-color: rgb(255, 230, 7);
 }
 .footer__texto {
   color: black;
@@ -210,7 +245,6 @@ body {
 .footer__icono--red {
   width: 25px;
   height: 25px;
-  background-color: rgba(128, 128, 128, 0.541);
   display: inline-block;
 }
 .footer__icono_redes {
