@@ -5,222 +5,64 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="css/reset.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet"/>
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'> <!--boxicons-->
     <link rel="stylesheet" href="css/index.css" />
 
     <title>Iguana Bar</title>
-  </head>
-  <!--La idea para el proyecto es hacer un sitio web responsive, de una sola pagina, para un bar -->
-
+  </head><!--La idea para el proyecto es hacer un sitio web responsive, de una sola pagina, para un bar -->
   <body>
-    <header class="encabezado" id="inicio">
-      <!--comienzo de header-->
-      <h1 class="encabezado__titulo">Iguana Bar</h1>
-      <nav class="encabezado__navar">
-        <ul>
-          <!-- barra de navegacion -->
-          <li class="encabezado__navar--item">
-            <a href="index.html#inicio">Inicio</a>
-          </li>
-          <li class="encabezado__navar--item">
-            <a href="index.html#nosotros">Nosotros</a>
-          </li>
-          <li class="encabezado__navar--item">
-            <a href="index.html#galeria">Multimedia</a>
-          </li>
-          <li class="encabezado__navar--item">
-            <a href="index.html#carta">Carta</a>
-          </li>
-          <li class="encabezado__navar--item">
-            <a href="index.html#contacto">Contacto</a>
-          </li>
-        </ul>
+    <div id="grilla" class="contenido">
+      <header class="border" class="encabezado" >        
+        <img class="encabezado__logo" src="../img/iguanaLogoAmarillo.png" alt="">
+      </header>
+      <nav class="navbar" class="border">
+          <ul class="encabezado__navbar"><!-- barra de navegacion -->
+            <li class="encabezado__navbar--item"><a href="index.html#inicio">Inicio</a></li>
+            <li class="encabezado__navbar--item"><a href="./Secciones/nosotros.html">Nosotros</a></li>
+            <li class="encabezado__navbar--item"><a href="./Secciones/galeria.html">Galeria</a></li>
+            <li class="encabezado__navbar--item"><a href="./Secciones/carta.html">Carta</a></li>
+            <li class="encabezado__navbar--item"><a href="./Secciones/contacto.html">Contacto</a></li>
+          </ul>
       </nav>
-    </header>
-    <!--final de header-->
-    <!--comienzo de content-->
-    <main class="contenido">
-      <section
-        class="inicio"   
-        data-type="background"
-        data-speed="10"
-      >
-        <h2 class="inicio__titulo">Bienvenidos</h2>
-        <article class="inicio__info">
-          <p>
-            Abrimos nuestras puertas en el 2002, y desde entonces nuestro
-            principal objetivo, <br />
-            ha sido brindarte la mejor antención para que disfrutes de un
-            ambiente agradable, con mucha buena onda y la mejor música.
+    </div>  <!--final de header-->
+      <!--comienzo de content-->
+      <main class="contenido">
+        <section id="inicio" class="inicio" >
+          <h2 class="inicio__titulo">Bienvenidos</h2>
+          <article class="inicio__info">
+            <p>
+              Abrimos nuestras puertas en el 2002, y desde entonces nuestro
+              principal objetivo, <br />
+              ha sido brindarte la mejor antención para que disfrutes de un
+              ambiente agradable, con mucha buena onda y la mejor música.
+            </p>
+          </article>
+          <article class="art__imagen">
+            <img class="art__imagen-bar" src="img/iguana3.webp" alt="bar iguana-frente">
+          </article>
+        </section> 
+      </main><!--final de content-->
+      <footer class="footer"><!--COMIENZO footer-->
+        <div class="footer__info">
+          <ul>
+            <li class="footer__info--item">
+              <a href="#">Preguntas Frecuentes</a>
+            </li>
+          </ul>
+        </div>       
+        <div class="social-media">
+                <i class='bx bxl-facebook' ></i>
+                <i class='bx bxl-instagram' ></i>
+                <i class='bx bxl-twitter' ></i>
+        </div> 
+        <div class="footer__texto">
+          <p class="footer__texto--derechos">
+            © 2021 Todos los Derechos Reservados | Iguana Bar
           </p>
-        </article>
-      </section>
-
-      <section
-        class="nosotros"
-        id="nosotros"
-        data-type="background"
-        data-speed="10"
-      >
-        <h2 class="nosotros__titulo">Nosotros</h2>
-        <article class="nosotros__titulo--definicion">
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. <br />
-            Dolores eaque voluptates eum, non maxime aut inventore, aliquid sunt
-            nam ipsam distinctio tenetur minima voluptate mollitia vel aliquam
-            atque deserunt eos?
-          </p>
-        </article>
-      </section>
-
-      <section class="galeria" id="galeria">
-        <h2 class="galeria__titulo">Galería</h2>
-        <div class="galeria__shows">
-          <img  class="galeria__shows--img" src="img/iguana/abiert_fuera.jpeg" alt="bar con gente">
-          <span class="galeria__shows--descripcion">
-              Verano 2019
-          </span>
+          <p>Diego Mauricio Gautero - Coderhouse</p>
         </div>
-        <div class="galeria__shows">
-          <img class="galeria__shows--img" src="img/iguana/barra.jpg" alt="bar con gente">
-        </div>
-        <div class="galeria__shows">
-          <img class="galeria__shows--img" src="img/iguana/picada.jpg" alt="bar con gente">
-        </div>
-        <div class="galeria__shows">
-          <img class="galeria__shows--img" src="img/iguana/calle.jpeg" alt="bar con gente">
-        </div>
-       
-      </section>
-      <section class="carta" id="carta">
-        <h2 class="carta__titulo">Carta</h2>
-        <h3 class="carta__variedad">Lomos</h3>
-        <div class="carta__menu">
-          <div class="carta__menu--variedad">lomito simple</div>
-          <div class="carta__menu--variedad">lomito completo</div>
-          <div class="carta__menu--variedad">lomito de pollo</div>
-        </div>
-        <h3 class="carta__variedad">Pizza</h3>
-        <div class="carta__menu">
-          <div class="carta__menu--variedad">Pizza simple</div>
-          <div class="carta__menu--variedad">Pizza Especial Jamon</div>
-          <div class="carta__menu--variedad">Pizza Fugazetta</div>
-        </div>
-        <h3 class="carta__variedad">Hamburguesas</h3>
-        <div class="carta__menu">
-          <div class="carta__menu--variedad">lomito simple</div>
-          <div class="carta__menu--variedad">lomito completo</div>
-          <div class="carta__menu--variedad">lomito de pollo</div>
-        </div>
-      </section>
-      <section class="contacto" id="contacto">
-        <h2 class="contaco__titulo">Contacto</h2>
-        <div class="contacto__form">
-          <form
-            class="formulario"
-            action="Entregable/index.html"
-            method="post"
-            enctype="multipart/form-data"
-          >
-          <input
-              class="textBox"
-              type="text"
-              name="apellido"
-              placeholder="Apellido"
-              id="apel"
-              required
-            />
-            <input
-              class="textBox"
-              type="text"
-              name="nombre"
-              placeholder="Nombre"
-              id="nomb"
-              required
-            />
-            <input
-              class="textBox"
-              type="email"
-              name=""
-              placeholder="Email"
-              id="mail"
-              required
-            />
-            <input
-              class="textBox"
-              type="tel"
-              name="telefono"
-              placeholder="Telefono"
-              id="telef"
-              required
-            />
-            <select name="ciudad" id="ciudad" required>
-              <option value="" disabled selected hidden> Ciudad</option>
-              <option value="">Córdoba</option>
-              <option value="">Carlos Paz</option>
-              <option value="">Rio de Janeiro</option>
-            </select>
-            <textarea
-              class="textarea"
-              name="mensaje"
-              placeholder="Mensaje"
-              cols="30"
-              rows="10"
-            ></textarea>
-            <input class="btn" type="submit" name="submit" value="Enviar " />
-            <input class="btn" type="reset" value="Limpiar" />
-          </form>
-        </div>
-        <div class="contacto__form">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d963.3984083772168!2d-65.08901290842222!3d-31.31860231405534!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x942d01dd14645dcb%3A0x17cc655a1488cf39!2sIguana%20Bar%20Salsacate!5e0!3m2!1ses!2sar!4v1623280438064!5m2!1ses!2sar"
-            width="400"
-            height="400"
-            style="border: 0"
-            allowfullscreen=""
-            loading="lazy"
-          ></iframe>
-        </div>
-      </section>
-    </main><!--final de content-->
-    <footer class="footer"><!--COMIENZO footer-->
-      <div class="footer__info">
-        <ul>
-          <li class="footer__info--item">
-            <a href="#">Preguntas Frecuentes</a>
-          </li>
-        </ul>
-      </div>
-      <div class="footer__icono">
-        <ul>
-          <li class="footer__icono--red">
-            <a href="https://www.facebook.com/"
-              ><img
-                class="footer__icono_redes"
-                src="img/facebook.png"
-                alt="icono_facebook"
-            /></a>
-          </li>
-          <li class="footer__icono--red">
-            <a href="https://www.instagram.com/"
-              ><img
-                class="footer__icono_redes"
-                src="img/instagram.png"
-                alt="icono_instagram"
-            /></a>
-          </li>
-        </ul>
-      </div>
-      <div class="footer__texto">
-        <p class="footer__texto--derechos">
-          © 2021 Todos los Derechos Reservados | Iguana Bar
-        </p>
-        <p>Diego Mauricio Gautero - Coderhouse</p>
-      </div>
     </footer><!--FINAL footer-->
+     
   </body>
 </html>
