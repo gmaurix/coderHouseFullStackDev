@@ -1,4 +1,3 @@
-
 /*Reset básico*/
 * {
   box-sizing: border-box;
@@ -8,22 +7,22 @@
 
 /*Estilos para el body*/
 body {
-  font-family: "Larsseit"; 
-/* font-family: "Lato",sans-serif; */
-  background: url(../img/fondo.webp); 
+  font-family: "Larsseit";
+  /* font-family: "Lato",sans-serif; */
+  background: url(../img/fondo.webp);
   background-repeat: repeat;
   background-attachment: fixed;
-  background-color:black;
+  background-color: black;
   color: #ffffff;
 }
 /*Fuente local del proyecto*/
 @font-face {
-  font-family:"Larsseit";
+  font-family: "Larsseit";
   src: url("../fuentes/larsseit/Larsseit-Medium.otf");
 }
 /* efecto smoot para el evento scrool-behavior 
 cuando se navega en la misma seccion*/
-:root{
+:root {
   scroll-behavior: smooth;
 }
 
@@ -40,9 +39,8 @@ cuando se navega en la misma seccion*/
   row-gap: 5px;
   column-gap: 5px;
   margin: 0;
-  height: 50vh;
+  height: 30vh;
 }
-
 
 /**/
 /*Estilo para el Header*/
@@ -61,16 +59,15 @@ header {
 .encabezado__logo {
   width: 180px;
   height: 80px;
-  margin-top:-10px;
+  margin-top: -10px;
 }
 
 /*Estilo para imagen iguanita*/
-.img__iguana{
+.img__iguana {
   display: grid;
   justify-content: center;
   align-items: center;
 }
-
 
 /**/
 /* Estilos para la Barra de navegación*/
@@ -99,13 +96,11 @@ nav {
 /* Animacion para la barra de Navegacion*/
 .encabezado__navbar--item a:hover {
   padding: 10px;
-  background-color: rgb(248, 212, 7);
+  background-color: #f8d407;
   color: rgb(8, 8, 8);
   border-radius: 10px;
-  transition:all .5s;
-  
+  transition: all 0.5s;
 }
-
 
 /**/
 /* ESTILOS PARA el main de la página <index.html>*/
@@ -118,34 +113,54 @@ nav {
   font-size: 50px;
 }
 .inicio__info {
-  margin: 40px;
+  /* margin: 20px; */
+  padding-bottom: 15px;
   text-align: center;
+  margin-bottom: 10px;
 }
 /*Estilos para la foto de frente del bar*/
-.art__imagen{
+.art__imagen {
   display: flex;
   justify-content: center;
   align-items: center;
-  
 }
 /*Estilos para la foto del bar*/
-.art__imagen-bar{
-  width: 80%;
-  height: 100vh;
+.art__imagen-bar {
+  margin-bottom: 10px;
+  width: 60%;
+  height: 70vh;
 }
- 
+
 /**/
 /* ESTILO PARA SECCION Nosotros*/
 .nosotros {
   width: 100%;
   height: 400px;
-  overflow: hidden;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
 }
+/*Definicion de posicion del titulo*/
 .nosotros__titulo {
-  margin: 10px;
+  text-align: center;
+  /* background-color:#f8d407 ; */
 }
+/*definicion del width del div */
 .nosotros__titulo--definicion {
-  margin: 10px;
+  width: 75%;
+}
+/*Estilos para el texto de Nosotros*/
+.nosotros__titulo--definicion p {
+  margin-left: 150px;
+}
+/*Estilos para la iguana*/
+.nosotros__titulo--definicion .figura_iguana {
+  width: 260px;
+  height: 240px;
+  margin-top: -120px;
+  margin-left: -100px;
 }
 
 /**/
@@ -153,9 +168,9 @@ nav {
 /*estilos para section de la galeria*/
 section#galeria {
   grid-area: galeria;
-  height: 700px;
+  height: 600px;
   display: grid;
-/*   background-color: rgba(255, 255, 255, 0.164); */
+  /*   background-color: rgba(255, 255, 255, 0.164); */
 }
 /*estilos para el id del section galeria*/
 #galeria {
@@ -168,31 +183,27 @@ section#galeria {
 /*estilos para los DIV de la galeria*/
 .galeria-foto {
   margin-top: 25px;
-  width: 300px;
-  height: 300px;
- 
+  width: 200px;
+  height: 200px;
 }
 /*estilo para el texto debajop de cafa foto de la galeria*/
-.galeria-foto p{
+.galeria-foto p {
   text-align: center;
-  color: black;
+  color: #f8d407;
   margin-top: 10px;
 }
 /* estilo para la etiqueta Img de la galeria*/
-.foto{
+.foto {
   text-align: center;
   border-radius: 10px;
   box-shadow: 2px 2px 3px #141414;
   width: 100%;
-  height: 75%; 
+  height: 75%;
 }
 /*transicion en las fotos de la galeria*/
 .foto:hover {
-  transform: scale(1.75,1.75);
+  transform: scale(1.95, 1.95);
   transition: all 1s;
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
 }
 
 /**/
@@ -301,19 +312,18 @@ section#galeria {
   justify-content: center;
 }
 /* definicion del h2*/
-.carta__categoria-bebidas>h2{
-  margin-bottom:62px;
+.carta__categoria-bebidas > h2 {
+  margin-bottom: 62px;
   text-align: center;
   color: black;
 }
 /*estilo para el <h3> dentro de cada elemento <ul>*/
-.carta__bebidas--sinAlcohol h3{
+.carta__bebidas--sinAlcohol h3 {
   text-decoration: underline;
   margin-bottom: 10px;
-  
 }
 /*estilos para la clase de los <div> que contienen las listas de bebidas*/
-.carta__bebidas--sinAlcohol{
+.carta__bebidas--sinAlcohol {
   color: rgb(0, 0, 0);
   font-weight: bold;
   display: flex;
@@ -323,14 +333,13 @@ section#galeria {
   align-items: center;
   margin: 10px;
 }
-.carta__bebidas--sinAlcohol ul{
+.carta__bebidas--sinAlcohol ul {
   list-style-type: none;
   width: 100%;
   margin-left: 20px;
 }
-.bebidaPrecio{
-  padding-top: 20px;  
- 
+.bebidaPrecio {
+  padding-top: 20px;
 }
 
 /**/
@@ -353,38 +362,35 @@ section#galeria {
   height: 20px;
   text-align: center;
   padding: 40px;
-  
 }
 /*estilos definidos para el div del Form*/
 .contacto__form {
   width: 35%;
 }
 /*Estilos para el mapa de Seccion Contacto*/
-#mapa{
-  margin-top:20px;
+#mapa {
+  margin-top: 20px;
   height: 450px;
   width: 400px;
 }
 /*Estilos para la direccion y telefono*/
-.direccion__telefonos{
+.direccion__telefonos {
   margin-top: 100px;
   height: 100px;
   width: 250px;
 }
-.direccion__telefonos p{
+.direccion__telefonos p {
   font-size: 12px;
   font-family: sans-serif;
-  
 }
-.direccion__telefonos .strong{
+.direccion__telefonos .strong {
   text-decoration: underline;
 }
-.direccion__telefonos .figura_iguana{
-  margin-top:20px ;
+.direccion__telefonos .figura_iguana {
+  margin-top: 20px;
   width: 120px;
   height: 120px;
 }
-
 
 /**/
 /*ESTILOS PARA EL FORMULARIO*/
@@ -449,7 +455,6 @@ section#galeria {
   border: solid 1px rgb(248, 212, 7);
 }
 
-
 /**/
 /* ESTILOS PARA EL Footer*/
 .footer {
@@ -483,8 +488,7 @@ section#galeria {
   color: #000000;
 }
 /*animacion iconos social-media*/
-.bx:hover{
+.bx:hover {
   transform: scale(1.55, 1.55);
   transition: all 0.2s;
 }
-
