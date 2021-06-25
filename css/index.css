@@ -4,11 +4,16 @@
   padding: 0;
   margin: 0;
 }
+body {
+  background: url(../img/fondo.webp);
+  background-repeat: repeat;
+  background-attachment: fixed;
+  background-color: black;
+}
 
 /*Estilos para el body*/
-body {
+.contenido {
   font-family: "Larsseit";
-  /* font-family: "Lato",sans-serif; */
   background: url(../img/fondo.webp);
   background-repeat: repeat;
   background-attachment: fixed;
@@ -20,8 +25,12 @@ body {
   font-family: "Larsseit";
   src: url("../fuentes/larsseit/Larsseit-Medium.otf");
 }
+@font-face {
+  font-family: "Lasserit";
+  src: url("../fuentes/larsseit/Larsseit-Light.otf");
+}
 /* efecto smoot para el evento scrool-behavior 
-cuando se navega en la misma seccion*/
+cuando se navega en la misma seccion de una pagina*/
 :root {
   scroll-behavior: smooth;
 }
@@ -32,6 +41,8 @@ cuando se navega en la misma seccion*/
   grid-template-areas:
     "header header header"
     "nav nav nav"
+    "inicio inicio inicio"
+    "nosotros nosotros nosotros"
     "galeria galeria galeria"
     "footer footer footer";
   grid-template-rows: auto auto;
@@ -59,16 +70,16 @@ header {
 .encabezado__logo {
   width: 180px;
   height: 80px;
-  margin-top: -10px;
+  /*  margin-top: -10px; */
 }
 
 /*Estilo para imagen iguanita*/
-.img__iguana {
+/* .img__iguana {
   display: grid;
   justify-content: center;
   align-items: center;
 }
-
+ */
 /**/
 /* Estilos para la Barra de navegación*/
 /*Estilos para el elemento Nav*/
@@ -91,15 +102,16 @@ nav {
 .encabezado__navbar--item a {
   padding: 10px;
   text-decoration: none;
+  font-size: 1.2em;
   color: #fff;
+  border-radius: 10px;
 }
 /* Animacion para la barra de Navegacion*/
 .encabezado__navbar--item a:hover {
   padding: 10px;
   background-color: #f8d407;
   color: rgb(8, 8, 8);
-  border-radius: 10px;
-  transition: all 0.5s;
+  transition: all 0.8s ease;
 }
 
 /**/
@@ -107,16 +119,29 @@ nav {
 
 /**/
 /*ESTILO PARA LA SECCION Inicio*/
+.contenido__inicio {
+  grid-area: inicio;
+  width: 100%;
+  height: 100vh;
+}
+
 .inicio__titulo {
   margin: 10px;
   text-align: center;
   font-size: 50px;
 }
 .inicio__info {
-  /* margin: 20px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding-bottom: 15px;
   text-align: center;
   margin-bottom: 10px;
+  font-family: "Lasserit";
+  width: 100%;
+}
+.inicio__info p {
+  width: 500px;
 }
 /*Estilos para la foto de frente del bar*/
 .art__imagen {
@@ -134,8 +159,9 @@ nav {
 /**/
 /* ESTILO PARA SECCION Nosotros*/
 .nosotros {
+  grid-area: nosotros;
   width: 100%;
-  height: 400px;
+  height: 100vh;
   display: flex;
   justify-content: space-evenly;
   flex-direction: row;
@@ -154,6 +180,7 @@ nav {
 /*Estilos para el texto de Nosotros*/
 .nosotros__titulo--definicion p {
   margin-left: 150px;
+  font-family: "Lasserit";
 }
 /*Estilos para la iguana*/
 .nosotros__titulo--definicion .figura_iguana {
@@ -162,7 +189,6 @@ nav {
   margin-top: -120px;
   margin-left: -100px;
 }
-
 /**/
 /* ESTILOS PARA LA Galeria*/
 /*estilos para section de la galeria*/
@@ -191,6 +217,7 @@ section#galeria {
   text-align: center;
   color: #f8d407;
   margin-top: 10px;
+  font-family: "Lasserit";
 }
 /* estilo para la etiqueta Img de la galeria*/
 .foto {
@@ -253,6 +280,7 @@ section#galeria {
   display: flex;
   height: 120px;
   align-items: center;
+  font-family: "Lasserit";
 }
 /*Estilo para ordernar los elementos de la descripcion de los platos*/
 .carta__comida--descripcion {
@@ -324,6 +352,7 @@ section#galeria {
 }
 /*estilos para la clase de los <div> que contienen las listas de bebidas*/
 .carta__bebidas--sinAlcohol {
+  font-family: "Lasserit";
   color: rgb(0, 0, 0);
   font-weight: bold;
   display: flex;
@@ -368,9 +397,12 @@ section#galeria {
   width: 35%;
 }
 /*Estilos para el mapa de Seccion Contacto*/
+.mapa-responsive{
+  display: none;
+}
 #mapa {
   margin-top: 20px;
-  height: 450px;
+  height: 850px;
   width: 400px;
 }
 /*Estilos para la direccion y telefono*/
@@ -458,14 +490,16 @@ section#galeria {
 /**/
 /* ESTILOS PARA EL Footer*/
 .footer {
+  grid-area: footer;
   clear: both;
+  font-family: "Lasserit";
   width: 100%;
   height: 100px;
   display: flex;
   justify-content: space-evenly;
   align-content: center;
   flex-direction: row;
-  background-color: #fcec3e;
+  background-color: #fece2f;
 }
 .footer__texto {
   color: black;
@@ -491,4 +525,260 @@ section#galeria {
 .bx:hover {
   transform: scale(1.55, 1.55);
   transition: all 0.2s;
+}
+
+/**/
+/**/ /**/
+/*MEDIA QUERIES*/
+@media screen and (max-width: 775px) and (min-width: 200px) {
+  #grilla {
+    display: grid;
+    grid-template-areas:
+      "header "
+      "nav "
+      "inicio "
+      "nosotros "
+      "galeria "
+      "footer ";
+    grid-template-rows: 50px;
+    grid-template-columns: 150px;
+    margin: 0;
+    height: 20vh;
+  }
+
+  .nosotros__titulo--definicion .figura_iguana {
+    display: none;
+  }
+  .encabezado__logo {
+    margin-top: 40px;
+    width: 85px;
+    height: 45px;
+  }
+  .encabezado__navbar {
+    grid-area: nav;
+    position: fixed;
+    font-size: 0.8em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+  }
+  /*Estilos para la clase del elemento <a> del nav */
+  .encabezado__navbar--item a {
+    padding: 5px;
+    text-decoration: none;
+    font-size: 0.9em;
+    color: #fff;
+    border-radius: 5px;
+  }
+  /* Animacion para la barra de Navegacion*/
+  .encabezado__navbar--item a:hover {
+    padding: 5px;
+    background-color: #f8d407;
+    color: rgb(8, 8, 8);
+    transition: all 0.8s ease;
+  }
+
+  /**/
+  .contenido__inicio {
+    grid-area: inicio;
+    margin-top: 100px;
+    height: 60vh;
+  }
+  .inicio__titulo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    height: auto;
+    width: 100vw;
+    font-size: 2.5em;
+  }
+  .inicio__info {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    font-size: 0.9em;
+    width: 80vw;
+    margin-left: 10vw;
+  }
+  .inicio__info p {
+    width: 250px;
+  }
+  .art__imagen-bar {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    margin-left: 70vw;
+    width: 300px;
+    height: 200px;
+  }
+
+  /*Section nosotros*/
+  .nosotros {
+    z-index: -10;
+    grid-area: nosotros;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: -20px;
+    height: 100vh;
+  }
+  .nosotros__titulo {
+    text-align: center;
+    font-size: 2.5em;
+    width: 100%;
+  }
+  .nosotros__definicion p {
+    text-align: center;
+    width: 250px;
+    margin: auto;
+  }
+
+  /*Section Galeria*/
+  section#galeria {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    overflow: scroll;
+  }
+  .galeria-foto {
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 30vh;
+  }
+  .foto {
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    margin-left: 40%;
+    height: 15vh;
+    width: 20vw;
+  }
+  .galeria-foto p {
+    text-align: center;
+    font-size: 0.8em;
+    width: 100%;
+  }
+
+  /*Section Carta*/
+  #carta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+    height: 80vh;
+    width: 250px;
+  }
+  .carta__titulo {
+    text-align: center;
+    font-size: 0.9em;
+    width: 100vw;
+  }
+  .carta__categoria,
+  .carta__categoria-bebidas {
+    height: 20vh;
+    width: 90vw;
+    text-shadow: 1px 1px 3px grey;
+  }
+  .carta__categoria--comida {
+    display: none;
+  }
+  .carta__bebidas {
+    display: none;
+  }
+
+  /*Catontacto*/
+  .contacto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100vw;
+    height: 110vh;
+  }
+  .contacto__titulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5vh;
+    text-align: center;
+    color: #f8d407;
+    margin-top: 20px;
+  }
+  .contacto__form {
+    width: 50vw;
+    height: 50vh;
+    font-size: 0.5em;
+  }
+  
+.btn:hover {
+  background-color: rgb(248, 212, 7);
+  color: rgb(8, 8, 8);
+  border: solid 1px rgb(248, 212, 7);
+}
+  .direccion__telefonos {
+    display: flex;
+    justify-content: left;
+    align-items: stretch;
+    flex-direction: column;
+    width: 160px;
+    height: 100px;
+    margin-right: 60px;
+    margin-top: 50px;
+  }
+  .direccion__telefonos strong,
+  p {
+    font-size: 0.9em;
+    color: white;
+    text-decoration: none;
+  }
+  /*estilos mapa*/
+  .contacto__mapa{
+    display: none;
+  }
+  .mapa-responsive { 
+    display: flex;      
+    position: relative;   
+    margin-bottom: -50px;
+  }
+  .mapa-responsive iframe {
+    padding: 60px;
+    height: 100%;
+    width: 100%;    
+  }
+  .direccion__telefonos .figura_iguana {
+    display: none;
+  }
+
+  /* footer*/
+
+  .footer {
+    width: 100vw;
+    text-align: center;
+    font-size: 0.7em;
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .footer__info,
+  .footer__texto {
+    display: none;
+  }
 }

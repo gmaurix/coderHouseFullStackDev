@@ -3,19 +3,20 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet"/>
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'> <!--boxicons-->
     <link rel="stylesheet" href="css/index.css" />
     <link rel="shortcut icon" href="iguana_logo.ico" type="image/x-icon">
+<!--     <script src="./js/scrollreveal.js"></script> -->
     <title>Iguana Bar</title>
   </head><!--La idea para el proyecto es hacer un sitio web responsive, de una sola pagina, para un bar -->
   <body>
     <div id="grilla" class="contenido">
       <header class="border" class="encabezado" >        
         <img class="encabezado__logo" src="../img/iguanaLogoAmarillo.png" alt="">
-      </header>
+      </header><!--final de header-->
       <nav class="navbar" class="border">
           <ul class="encabezado__navbar"><!-- barra de navegacion -->
             <li class="encabezado__navbar--item"><a href="index.html#inicio">Inicio</a></li>
@@ -24,26 +25,25 @@
             <li class="encabezado__navbar--item"><a href="./Secciones/carta.html">Carta</a></li>
             <li class="encabezado__navbar--item"><a href="./Secciones/contacto.html">Contacto</a></li>
           </ul>
-      </nav>
-    </div>  <!--final de header-->
+      </nav>    
       <!--comienzo de content-->
-      <main class="contenido">
+      <div class="contenido__inicio">
         <section id="inicio" class="inicio" >
           <h2 class="inicio__titulo">Bienvenidos</h2>
           <article class="inicio__info">
             <p>
               Abrimos nuestras puertas en el 2002, y desde entonces nuestro
-              principal objetivo, <br />
+              principal objetivo,
               ha sido brindarte la mejor antención para que disfrutes de un
               ambiente agradable, con mucha buena onda y la mejor música.
             </p>
-            <img class="art__imagen-bar" src="img/ingresoBar.jpeg" alt="bar iguana-frente">
+           
           </article>
           <article class="art__imagen">
-          
+            <img class="art__imagen-bar" src="img/ingresoBar.jpeg" alt="bar iguana-frente">
           </article>
         </section> 
-      </main><!--final de content-->
+      </div><!--final de content-->
       <footer class="footer"><!--COMIENZO footer-->
         <div class="footer__info">
           <ul>
@@ -64,6 +64,7 @@
           <p>Diego Mauricio Gautero - Coderhouse</p>
         </div>
     </footer><!--FINAL footer-->
-     
+  </div> 
+   <!--   <script src="js/scrolReveal2.js"></script> -->
   </body>
 </html>
