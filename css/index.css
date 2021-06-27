@@ -353,7 +353,7 @@ section#galeria {
 /*estilos para la clase de los <div> que contienen las listas de bebidas*/
 .carta__bebidas--sinAlcohol {
   font-family: "Lasserit";
-  color: rgb(0, 0, 0);
+  color: black;
   font-weight: bold;
   display: flex;
   justify-content: space-evenly;
