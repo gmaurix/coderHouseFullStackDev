@@ -228,10 +228,10 @@ section#galeria {
   height: 75%;
 }
 /*transicion en las fotos de la galeria*/
-.foto:hover {
-  transform: scale(1.95, 1.95);
-  transition: all 1s;
-}
+ .foto:hover {
+  transform: scale(1.2, 1.2);
+  transition: all 0.5s;
+} 
 
 /**/
 /* ESTILOS PARA SECCION Carta*/
