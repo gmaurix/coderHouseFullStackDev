@@ -109,7 +109,7 @@ nav {
 /* Animacion para la barra de Navegacion*/
 .encabezado__navbar--item a:hover {
   padding: 10px;
-  background-color: #f8d407;
+  background-color: #fece2f;
   color: rgb(8, 8, 8);
   transition: all 0.8s ease;
 }
@@ -252,14 +252,14 @@ section#galeria {
   text-align: center;
   letter-spacing: 3px;
   padding: 10px;
-  background-color: rgba(252, 236, 62);
+  background-color:#fece2f;
   margin: 25px;
   color: black;
 }
 /*para los <div> de categoria (chegusan, pizzas y bebidas)*/
 .carta__categoria {
   font-size: small;
-  background-color: rgba(252, 236, 62);
+  background-color:#fece2f;
   border-radius: 5px;
   width: 450px;
   box-shadow: 1px 3px 3px 2px rgb(22, 22, 22);
@@ -330,7 +330,7 @@ section#galeria {
 /*Estilos para la carta de bebidas*/
 .carta__categoria-bebidas {
   font-size: small;
-  background-color: rgba(252, 236, 62);
+  background-color: #fece2f;
   border-radius: 5px;
   width: 450px;
   box-shadow: 1px 3px 3px 2px rgb(22, 22, 22);
