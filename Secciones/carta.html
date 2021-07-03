@@ -4,11 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+   
+    <!---->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet"/>
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'> <!--boxicons-->
     <link rel="stylesheet" href="../css/index.css" />
+    <link rel="stylesheet" href="../css/animate.css">
     <link rel="shortcut icon" href="../iguanaLogoAmarillo.ico" type="image/x-icon">
+    <link href="../js/scrollreveal.js">
     <title>Carta</title>
 </head>
 <body>
@@ -27,9 +32,9 @@
         </nav>
       </div>
         <section id="carta" class="section__carta" >
-            <h2 class="carta__titulo">NUESTRA CARTA</h2>
+            <h2 class="carta__titulo wow animate__bounceIn">NUESTRA CARTA</h2>
             <div class="carta" id="carta">           
-                <div class="carta__categoria">
+                <div class="carta__categoria ">
                     <h2>SANDWICHES</h2>
                     <div class="carta__categoria--comida">                        
                         <div class="carta__comida--descripcion">
@@ -82,7 +87,7 @@
                         </div>
                     </div>    
                 </div>
-                <div class="carta__categoria">
+                <div class="carta__categoria ">
                     <h2>PIZZAS</h2>
                     <div class="carta__categoria--comida">                        
                         <div class="carta__comida--descripcion">
@@ -248,5 +253,12 @@
         </div>
     </footer><!--FINAL footer-->
     </div>    
+    <script src="../js/wow.min.js"></script>    
+    <script>
+    new WOW().init();
+    </script>
+    <script src="../js/scrollreveal.js"></script>
+
+
 </body>
 </html>

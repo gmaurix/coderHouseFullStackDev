@@ -202,15 +202,17 @@ section#galeria {
 #galeria {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
   justify-items: center;
   align-items: center;
+  gap: 10px;
+  border-color: black;
 }
 /*estilos para los DIV de la galeria*/
 .galeria-foto {
   margin-top: 25px;
-  width: 200px;
-  height: 200px;
+  width: 250px;
+  height: 250px;
 }
 /*estilo para el texto debajop de cafa foto de la galeria*/
 .galeria-foto p {
@@ -228,10 +230,10 @@ section#galeria {
   height: 75%;
 }
 /*transicion en las fotos de la galeria*/
- .foto:hover {
+.foto:hover {
   transform: scale(1.2, 1.2);
   transition: all 0.5s;
-} 
+}
 
 /**/
 /* ESTILOS PARA SECCION Carta*/
@@ -252,14 +254,14 @@ section#galeria {
   text-align: center;
   letter-spacing: 3px;
   padding: 10px;
-  background-color:#fece2f;
+  background-color: #fece2f;
   margin: 25px;
   color: black;
 }
 /*para los <div> de categoria (chegusan, pizzas y bebidas)*/
 .carta__categoria {
   font-size: small;
-  background-color:#fece2f;
+  background-color: #fece2f;
   border-radius: 5px;
   width: 450px;
   box-shadow: 1px 3px 3px 2px rgb(22, 22, 22);
@@ -397,7 +399,7 @@ section#galeria {
   width: 35%;
 }
 /*Estilos para el mapa de Seccion Contacto*/
-.mapa-responsive{
+.mapa-responsive {
   display: none;
 }
 #mapa {
@@ -530,7 +532,7 @@ section#galeria {
 /**/
 /**/ /**/
 /*MEDIA QUERIES*/
-@media screen and (max-width: 775px) and (min-width: 200px) {
+@media screen and (max-width: 640px) {
   #grilla {
     display: grid;
     grid-template-areas:
@@ -563,6 +565,7 @@ section#galeria {
     justify-content: center;
     align-items: center;
     gap: 5px;
+    width: 100%;
   }
   /*Estilos para la clase del elemento <a> del nav */
   .encabezado__navbar--item a {
@@ -658,15 +661,15 @@ section#galeria {
     align-items: center;
     justify-content: space-evenly;
     width: 100%;
-    height: 30vh;
+    height: 20vh;
   }
   .foto {
     align-items: center;
     justify-content: center;
     margin-top: 50px;
-    margin-left: 40%;
-    height: 15vh;
-    width: 20vw;
+    margin-left: 25%;
+    height: 20vh;
+    width: 40vw;
   }
   .galeria-foto p {
     text-align: center;
@@ -722,48 +725,294 @@ section#galeria {
     margin-top: 20px;
   }
   .contacto__form {
-    width: 50vw;
-    height: 50vh;
+    width: 60vw;
+    height: 45vh;
     font-size: 0.5em;
   }
-  
-.btn:hover {
-  background-color: rgb(248, 212, 7);
-  color: rgb(8, 8, 8);
-  border: solid 1px rgb(248, 212, 7);
-}
+
+  .btn:hover {
+    background-color: rgb(248, 212, 7);
+    color: rgb(8, 8, 8);
+    border: solid 1px rgb(248, 212, 7);
+  }
   .direccion__telefonos {
     display: flex;
     justify-content: left;
     align-items: stretch;
     flex-direction: column;
-    width: 160px;
-    height: 100px;
-    margin-right: 60px;
-    margin-top: 50px;
+    width: 100vw; 
   }
-  .direccion__telefonos strong,
+  .direccion__telefonos 
   p {
-    font-size: 0.9em;
+    font-size: 1.2em;
     color: white;
-    text-decoration: none;
   }
   /*estilos mapa*/
-  .contacto__mapa{
+  .contacto__mapa {
     display: none;
   }
-  .mapa-responsive { 
-    display: flex;      
-    position: relative;   
-    margin-bottom: -50px;
+  .mapa-responsive {
+    display: flex;
+    position: relative;
+    margin-bottom: 100px;
   }
   .mapa-responsive iframe {
-    padding: 60px;
-    height: 100%;
-    width: 100%;    
+    width: 100%;
   }
   .direccion__telefonos .figura_iguana {
     display: none;
+  }
+
+  /* footer*/
+
+  .footer {
+    width: 100vw;
+    text-align: center;
+    font-size: 0.7em;
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .footer__info,
+  .footer__texto {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 810px) and (min-width: 640px) {
+  #grilla {
+    display: grid;
+    grid-template-areas:
+      "header "
+      "nav "
+      "inicio "
+      "nosotros "
+      "galeria "
+      "footer ";
+    grid-template-rows: 50px;
+    grid-template-columns: 150px;
+    margin: 0;
+    height: 20vh;
+  }
+
+  .nosotros__titulo--definicion .figura_iguana {
+    display: none;
+  }
+  .encabezado__logo {
+    margin-top: 40px;
+    width: 95px;
+    height: 55px;
+  }
+  .encabezado__navbar {
+    grid-area: nav;
+    position: fixed;
+    font-size: 1.5em;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center;
+    align-items: center; */
+  }
+  /*Estilos para la clase del elemento <a> del nav */
+  .encabezado__navbar--item a {
+    padding: 5px;
+    text-decoration: none;
+    font-size: 0.9em;
+    color: #fff;
+    border-radius: 5px;
+  }
+  /* Animacion para la barra de Navegacion*/
+  .encabezado__navbar--item a:hover {
+    padding: 5px;
+    background-color: #f8d407;
+    color: rgb(8, 8, 8);
+    transition: all 0.8s ease;
+  }
+
+  /**/
+  .contenido__inicio {
+    grid-area: inicio;
+    margin-top: 100px;
+    height: 60vh;
+  }
+  .inicio__titulo {
+    margin-top: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    height: auto;
+    width: 100vw;
+    font-size: 2.5em;
+  }
+  .inicio__info {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    font-size: 0.9em;
+    width: 80vw;
+    margin-left: 10vw;
+  }
+  .inicio__info p {
+    width: 250px;
+  }
+  .art__imagen-bar {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    margin-left: 70vw;
+    width: 300px;
+    height: 200px;
+  }
+
+  /*Section nosotros*/
+  .nosotros {
+    z-index: -10;
+    grid-area: nosotros;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: -20px;
+    height: 100vh;
+  }
+  .nosotros__titulo {
+    text-align: center;
+    font-size: 2.5em;
+    width: 100%;
+  }
+  .nosotros__definicion p {
+    text-align: center;
+    width: 250px;
+    margin: auto;
+  }
+
+  /*Section Galeria*/
+  section#galeria {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    overflow: scroll;
+  }
+  .galeria-foto {
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 20vh;
+  }
+  .foto {
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    margin-left: 25%;
+    height: 20vh;
+    width: 40vw;
+  }
+  .galeria-foto p {
+    text-align: center;
+    font-size: 0.8em;
+    width: 100%;
+  }
+
+  /*Section Carta*/
+  #carta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+    height: 80vh;
+    width: 250px;
+  }
+  .carta__titulo {
+    text-align: center;
+    font-size: 0.9em;
+    width: 100vw;
+  }
+  .carta__categoria,
+  .carta__categoria-bebidas {
+    height: 20vh;
+    width: 90vw;
+    text-shadow: 1px 1px 3px grey;
+  }
+  .carta__categoria--comida {
+    display: none;
+  }
+  .carta__bebidas {
+    display: none;
+  }
+
+  /*Catontacto*/
+  .contacto {
+    display: flex; /* 
+    justify-content: center;
+    align-items: center; */
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100vw;
+    height: 110vh;
+  }
+  .contacto__titulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5vh;
+    text-align: center;
+    color: #f8d407;
+    margin-top: auto;
+  }
+  .contacto__form {
+    width: 100vw;
+    height: 40vh;
+    font-size: 0.8em;
+   
+  }
+ .figura_iguana{display: none;}
+ 
+  .direccion__telefonos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+  }
+  .direccion__telefonos strong,
+  p {
+    font-size: 1.8em;
+    color: white;   
+    text-align: justify;
+    width: 50vw;
+  }
+
+  .btn:hover {
+    background-color: rgb(248, 212, 7);
+    color: rgb(8, 8, 8);
+    border: solid 1px rgb(248, 212, 7);
+  }
+
+  /*estilos mapa*/
+  .mapa-responsive {
+    display: none;    
+  }
+  .contacto__mapa {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;      
+      
+  }
+  .contacto__mapa iframe {  
+    width: 100VW;
   }
 
   /* footer*/
