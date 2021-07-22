@@ -18,41 +18,44 @@
     <title>Galeria</title>
   </head>
   <body>
-    <div id="grilla" class="contenido">
-      <div class="container" >
-        <div class="menu_flotante bg-warning mt-5" style="border-radius:75px;position: fixed; right:1em;bottom:1em ;z-index: 100;  ;">
-            <a href="index.html#barra" class="p-4" style="text-decoration: none; font-weight: bold; ">⟰</a>            
-        </div>
-    <content id="grilla" class="grilla" >
-        
-        <nav class="navbar navbar-expand-md navbar-light" id="barra">
-            <a href="#" class="navbar-brand m-auto">
-                <span></span>
-            </a>
-            <button type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                class="navbar-toggler mt-0 mx-0 bg-warning " aria-controls="navbarNav"
-                aria-expanded="false">
-            <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-center bg-warning" id="navbarNav">
-                <ul class="nav navbar-nav mx-3">                
-                    <li class="navar__item nav-item justify-content-center"><a class="nav-link text-white" href="../index.html">INICIO</a></li>
-                    <li class="navar__item nav-item justify-content-center"><a class="nav-link text-white" href="/Secciones/nosotros.html">NOSOTROS</a></li>
-                    <li class="navar__item nav-item justify-content-center"><a class="nav-link text-white" href="/Secciones/galeria.html">GALERIA</a></li>
-                    <li class="navar__item nav-item justify-content-center"><a class="nav-link text-white" href="/Secciones/carta.html">CARTA</a></li>
-                    <li class="navar__item nav-item justify-content-center"><a class="nav-link text-white" href="/Secciones/contacto.html">CONTACTO</a></li>                
-                </ul>        
-            </div>  
-        </nav>        
-        
-  
-        <header class="encabezado img-fluid" id="header">
-        <!--comienzo de header-->       
+   <div class="container" >
+     <content id="grilla" class="grilla" >
+      <header class="encabezado img-fluid" id="header">        
         <br>    
         <div class="logoIguana justify-content-center text-center" >
-                <img class="logo img-fluid" src="../img/iguanaLogoAmarillo.png" alt="logoIguanaBar">
+                <img class="logo img-fluid" src="./img/iguanaLogoAmarillo.png" alt="logoIguanaBar">
         </div>
-        </header>
+      </header>   
+        <!-- barra de navegacion con componente Boostrap NavBar-->
+        <nav class="navbar navbar-expand-lg justify-content-end mx-1 navbar-light col-12-sm ">              
+          <a href="#" class="navbar-brand bg-warning">
+             <span></span>
+          </a> 
+          <button class="navbar-toggler bg-warning " type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"  aria-controls="navbarNav"
+          aria-expanded="false">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+          <div class="collapse navbar-collapse " id="navbarNav">
+              <ul class="navbar-nav mx-auto ">                       
+                  <li class="nav-item navar__item bg-transparent"><a class="nav-link text-white" href="../index.html">INICIO</a></li>
+                  <li class="nav-item navar__item bg-transparent"><a class="nav-link text-white" href="nosotros.html">NOSOTROS</a></li>
+                  <li class="nav-item navar__item bg-transparent"><a class="nav-link text-white" href="galeria.html">GALERIA</a></li>
+                  <li class="nav-item navar__item bg-transparent"><a class="nav-link text-white" href="carta.html">CARTA</a></li>
+                  <li class="nav-item navar__item bg-transparent"><a class="nav-link text-white" href="contacto.html">CONTACTO</a></li>                
+                  <li class="nav-item navar__item bg-transparent"><a class="nav-link text-white" href="#">
+                  <div class="social-media-barra">
+                      <i class='bx bxl-whatsapp' ></i>
+                      <i class='bx bxl-facebook' ></i>
+                      <i class='bx bxl-instagram' ></i>
+                      <i class='bx bxl-twitter ' ></i>
+                    </div>
+                  </a></li>                
+                </ul>            
+             
+           </div>
+      </nav>
+      <br>  
      
         <!--section de la galeria-->
         <section class="galeria justify-content-evenly d-flex flex-row flex-wrap " id="galeria">

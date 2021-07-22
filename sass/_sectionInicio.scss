@@ -1,0 +1,23 @@
+
+
+    .frente_bar{
+        background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
+        display: flex;
+        height: auto;
+        width: 40vw;        
+        margin-bottom: 40px;
+    }      
+  .inicio{
+      position: relative;
+      color:$colorLetraBlanca;
+      height: 55em;
+     
+    .inicio__titulo{
+        font-size: 2.5em;   
+        
+    }
+    .inicio__info{  
+        z-index: 150;      
+        font-size: 1.5em;
+    }
+ }

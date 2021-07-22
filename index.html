@@ -3,64 +3,76 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" /> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet"/>
-    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'> <!--boxicons-->  
-
-    <link rel="shortcut icon" href="iguana_logo.ico" type="image/x-icon">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'> <!--boxicons-->
+      <!--Boostrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  
     <link rel="stylesheet" href="css/index.css" />
 
-    <!--     <script src="./js/scrollreveal.js"></script> -->
     <title>Iguana Bar</title>
-  </head><!--La idea para el proyecto es hacer un sitio web responsive, de una sola pagina, para un bar -->
+  </head>
   <body>
-    <div class="container" >
-      <div class="menu_flotante bg-warning mt-5" style="border-radius:75px;position: fixed; right:1em;bottom:1em ;z-index: 100;  ;">
-          <a href="index.html#barra" class="p-4" style="text-decoration: none; font-weight: bold; ">⟰</a>            
-      </div>
-  <content id="grilla" class="grilla" >
-      
-      <nav class="navbar navbar-expand-md navbar-light" id="barra">
-          <a href="#" class="navbar-brand m-auto">
-              <span></span>
-          </a>
-          <button type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-              class="navbar-toggler mt-0 mx-0 bg-warning " aria-controls="navbarNav"
-              aria-expanded="false">
-          <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse justify-content-center bg-warning" id="navbarNav">
-              <ul class="nav navbar-nav mx-3">                
-                  <li class="navar__item nav-item justify-content-center"><a class="nav-link text-white" href="index.html#inicio">INICIO</a></li>
-                  <li class="navar__item nav-item justify-content-center"><a class="nav-link text-white" href="/Secciones/nosotros.html">NOSOTROS</a></li>
-                  <li class="navar__item nav-item justify-content-center"><a class="nav-link text-white" href="/Secciones/galeria.html">GALERIA</a></li>
-                  <li class="navar__item nav-item justify-content-center"><a class="nav-link text-white" href="/Secciones/carta.html">CARTA</a></li>
-                  <li class="navar__item nav-item justify-content-center"><a class="nav-link text-white" href="/Secciones/contacto.html">CONTACTO</a></li>                
-              </ul>        
-          </div>  
-      </nav>        
-      
-
-      <header class="encabezado img-fluid" id="header">
+     <!--SE APLICA BOOSTRAP A BARRA DE NAVEGACION Y ALINEACION DE TEXTO EN PARRAFO Y TITULO Y NAVAR-->
+    <div id="grilla" class="container">
       <!--comienzo de header-->       
-      <br>    
-      <div class="logoIguana justify-content-center text-center" >
-              <img class="logo img-fluid" src="./img/iguanaLogoAmarillo.png" alt="logoIguanaBar">
-      </div>
-      </header>
-      <!--final de header-->         
-      <section id="inicio" class="inicio">
-              <h2 class="inicio__titulo text-center mt-5">Inicio</h2>
-              <article class="inicio__articulo text-center justify-content-center m-auto col-xs-12 col-sm-12 col-md-8 col-lg-8">
-                  <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores eaque voluptates eum, non maxime aut
-                      inventore, aliquid sunt nam ipsam distinctio tenetur minima voluptate mollitia vel aliquam atque
-                      deserunt </p>
-              </article>
-      </section>
-     
+      <header class="encabezado img-fluid" id="header">        
+        <br>    
+        <div class="logoIguana justify-content-center text-center" >
+                <img class="logo img-fluid" src="./img/iguanaLogoAmarillo.png" alt="logoIguanaBar">
+        </div>
+      </header>   
+        <!-- barra de navegacion con componente Boostrap NavBar-->
+        <nav class="navbar navbar-expand-lg justify-content-end mx-1 navbar-light col-12-sm ">              
+          <a href="#" class="navbar-brand bg-warning">
+             <span></span>
+          </a> 
+          <button class="navbar-toggler bg-warning " type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"  aria-controls="navbarNav"
+          aria-expanded="false">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+          <div class="collapse navbar-collapse " id="navbarNav">
+              <ul class="navbar-nav mx-auto ">                       
+                  <li class="nav-item navar__item bg-transparent"><a class="nav-link text-white" href="index.html">INICIO</a></li>
+                  <li class="nav-item navar__item bg-transparent"><a class="nav-link text-white" href="./Secciones/nosotros.html">NOSOTROS</a></li>
+                  <li class="nav-item navar__item bg-transparent"><a class="nav-link text-white" href="./Secciones/galeria.html">GALERIA</a></li>
+                  <li class="nav-item navar__item bg-transparent"><a class="nav-link text-white" href="./Secciones/carta.html">CARTA</a></li>
+                  <li class="nav-item navar__item bg-transparent"><a class="nav-link text-white" href="./Secciones/contacto.html">CONTACTO</a></li>                
+                  <li class="nav-item navar__item bg-transparent"><a class="nav-link text-white" href="#">
+                  <div class="social-media-barra">
+                      <i class='bx bxl-whatsapp' ></i>
+                      <i class='bx bxl-facebook' ></i>
+                      <i class='bx bxl-instagram' ></i>
+                      <i class='bx bxl-twitter ' ></i>
+                    </div>
+                  </a></li>                
+                </ul>            
+             
+           </div>
+      </nav>
+      <br>  
+      <!--comienzo de content-->
+      <div class="contenido__inicio ">
+        
+        <section id="inicio" class="inicio" >
+          
+          <h2 class="inicio__titulo text-center">Bienvenidos</h2>       
+          <article class="inicio__info text-center">
+            <p class="text-center justify-content-center m-auto col-lg-8 col-sm-12">
+              Abrimos nuestras puertas en el 2002, y desde entonces nuestro
+              principal objetivo,
+              ha sido brindarte la mejor antención para que disfrutes de un
+              ambiente agradable, con mucha buena onda y la mejor música.
+            </p>           
+          </article>
+          <img src="img/galeria/7.jpg" class="frente_bar img-fluid justify-content-center text-center m-auto" alt="ingreso bar">
+        </section> 
+      </div><!--final de content-->    
       <footer class="footer"><!--COMIENZO footer-->
         <div class="footer__info">
           <ul>
@@ -70,6 +82,7 @@
           </ul>
         </div>       
         <div class="social-media">
+                <i class='bx bxl-whatsapp' ></i>
                 <i class='bx bxl-facebook' ></i>
                 <i class='bx bxl-instagram' ></i>
                 <i class='bx bxl-twitter' ></i>
@@ -80,10 +93,7 @@
           </p>
           <p>Diego Mauricio Gautero - Coderhouse</p>
         </div>
-    </footer><!--FINAL footer-->
+      </footer><!--FINAL footer-->
   </div> 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-
-   <!--   <script src="js/scrolReveal2.js"></script> -->
   </body>
 </html>
