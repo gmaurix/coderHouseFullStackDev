@@ -6,47 +6,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" /> 
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet"/>
-    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'> <!--boxicons-->
-    <link rel="stylesheet" href="css/index.css" />
-    <link rel="shortcut icon" href="iguana_logo.ico" type="image/x-icon">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'> <!--boxicons-->  
 
-   <!--  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> -->
-<!--     <script src="./js/scrollreveal.js"></script> -->
+    <link rel="shortcut icon" href="iguana_logo.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/index.css" />
+
+    <!--     <script src="./js/scrollreveal.js"></script> -->
     <title>Iguana Bar</title>
   </head><!--La idea para el proyecto es hacer un sitio web responsive, de una sola pagina, para un bar -->
   <body>
-    <div id="grilla" class="contenido">
-      <header class="border" class="encabezado" >        
-        <img class="encabezado__logo" src="./img/iguanaLogoAmarillo.png" alt="">
-      </header><!--final de header-->
-      <nav class="navbar" class="border">
-          <ul class="encabezado__navbar"><!-- barra de navegacion -->
-            <li class="encabezado__navbar--item"><a href="index.html#inicio">Inicio</a></li>
-            <li class="encabezado__navbar--item"><a href="./Secciones/nosotros.html">Nosotros</a></li>
-            <li class="encabezado__navbar--item"><a href="./Secciones/galeria.html">Galeria</a></li>
-            <li class="encabezado__navbar--item"><a href="./Secciones/carta.html">Carta</a></li>
-            <li class="encabezado__navbar--item"><a href="./Secciones/contacto.html">Contacto</a></li>
-          </ul>
-      </nav>    
-      <!--comienzo de content-->
-      <div class="contenido__inicio">
-        <section id="inicio" class="inicio" >
-          <h2 class="inicio__titulo">Bienvenidos</h2>
-          <article class="inicio__info">
-            <p>
-              Abrimos nuestras puertas en el 2002, y desde entonces nuestro
-              principal objetivo,
-              ha sido brindarte la mejor antención para que disfrutes de un
-              ambiente agradable, con mucha buena onda y la mejor música.
-            </p>
-           
-          </article>
-          <article class="art__imagen">
-            <img class="art__imagen-bar" src="img/ingresoBar.jpeg" alt="bar iguana-frente">
-          </article>
-        </section> 
-      </div><!--final de content-->
+    <div class="container" >
+      <div class="menu_flotante bg-warning mt-5" style="border-radius:75px;position: fixed; right:1em;bottom:1em ;z-index: 100;  ;">
+          <a href="index.html#barra" class="p-4" style="text-decoration: none; font-weight: bold; ">⟰</a>            
+      </div>
+  <content id="grilla" class="grilla" >
+      
+      <nav class="navbar navbar-expand-md navbar-light" id="barra">
+          <a href="#" class="navbar-brand m-auto">
+              <span></span>
+          </a>
+          <button type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+              class="navbar-toggler mt-0 mx-0 bg-warning " aria-controls="navbarNav"
+              aria-expanded="false">
+          <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-center bg-warning" id="navbarNav">
+              <ul class="nav navbar-nav mx-3">                
+                  <li class="navar__item nav-item justify-content-center"><a class="nav-link text-white" href="index.html#inicio">INICIO</a></li>
+                  <li class="navar__item nav-item justify-content-center"><a class="nav-link text-white" href="/Secciones/nosotros.html">NOSOTROS</a></li>
+                  <li class="navar__item nav-item justify-content-center"><a class="nav-link text-white" href="/Secciones/galeria.html">GALERIA</a></li>
+                  <li class="navar__item nav-item justify-content-center"><a class="nav-link text-white" href="/Secciones/carta.html">CARTA</a></li>
+                  <li class="navar__item nav-item justify-content-center"><a class="nav-link text-white" href="/Secciones/contacto.html">CONTACTO</a></li>                
+              </ul>        
+          </div>  
+      </nav>        
+      
+
+      <header class="encabezado img-fluid" id="header">
+      <!--comienzo de header-->       
+      <br>    
+      <div class="logoIguana justify-content-center text-center" >
+              <img class="logo img-fluid" src="./img/iguanaLogoAmarillo.png" alt="logoIguanaBar">
+      </div>
+      </header>
+      <!--final de header-->         
+      <section id="inicio" class="inicio">
+              <h2 class="inicio__titulo text-center mt-5">Inicio</h2>
+              <article class="inicio__articulo text-center justify-content-center m-auto col-xs-12 col-sm-12 col-md-8 col-lg-8">
+                  <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores eaque voluptates eum, non maxime aut
+                      inventore, aliquid sunt nam ipsam distinctio tenetur minima voluptate mollitia vel aliquam atque
+                      deserunt </p>
+              </article>
+      </section>
+     
       <footer class="footer"><!--COMIENZO footer-->
         <div class="footer__info">
           <ul>
@@ -68,6 +82,8 @@
         </div>
     </footer><!--FINAL footer-->
   </div> 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
    <!--   <script src="js/scrolReveal2.js"></script> -->
   </body>
 </html>
