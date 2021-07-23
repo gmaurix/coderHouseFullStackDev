@@ -9,3 +9,26 @@
     height: auto;
     margin-bottom: 50px;
   }
+  h2{
+    color: $colorLetraBlanca;
+  }
+  p{color: $colorLetraBlanca;}
+  .navbar-nav{
+    
+    .nav-item{
+     
+      .nav-link{
+        padding-bottom: 1px;
+        
+        &:hover{
+          border-bottom: solid 1px $colorAmarrilo;
+          
+        //  background-color: $colorAmarrilo;
+                   
+        }
+      }
+    }
+  }
+  .footer p{
+    color: $colorLetraNegra;
+  }

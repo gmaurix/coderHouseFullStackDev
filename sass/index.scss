@@ -1,10 +1,12 @@
 @import'listas';
 @import 'sectionInicio';
+@import'galeria';
+@import 'carta';
 @import 'footer';
 @import 'allSection';
 
 body{
-    background-image: url("../img/fondo.webp");
+    background-image: url("../img/fondo.webp"); 
     background-repeat: repeat;
     background-color:$colorLetraNegra;
     background-attachment: fixed;
