@@ -1,8 +1,8 @@
 .frente_bar {
-  background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
   display: flex;
   height: auto;
   width: 40vw;
+  height: auto;
   margin-bottom: 40px;
 }
 
@@ -300,6 +300,10 @@ p {
 
 .footer p {
   color: #020202;
+}
+
+.nosotros {
+  height: 40em;
 }
 
 body {
