@@ -23,12 +23,13 @@
         &:hover{
           border-bottom: solid 1px $colorAmarrilo;
           
-        //  background-color: $colorAmarrilo;
+     
                    
         }
       }
     }
   }
+  .carta__comida--descripcion p{ color: $colorLetraNegra;}
   .footer p{
     color: $colorLetraNegra;
   }

@@ -1,0 +1,44 @@
+.contacto {
+  top: -0.5em;
+  height: 55em;
+  color: $colorLetraBlanca;
+}
+.contacto h2 {
+  margin-top: 1em;
+}
+.encabezadoCTO {
+  height: 5em;
+}
+
+.formulario .textBox {
+  color: $colorLetraBlanca;
+  background-color: transparent;
+  border: $colorAmarrilo 1px S;
+  height: 3em;
+  border-color: transparent;
+   
+}
+.formulario input:hover {
+  border-color: $colorAmarrilo ;
+  appearance: $colorAmarrilo;
+  &:focus-visible{
+    border-color: $colorAmarrilo ;
+    appearance: $colorAmarrilo;
+  }
+}
+
+.formulario .ciudad {
+  height: 2.5em;
+  color: $colorLetraNegra;
+  background-color: $colorAmarrilo;
+}
+
+.formulario .textarea {
+  color: $colorLetraBlanca;
+  border: $colorAmarrilo 1px solid;
+  
+ 
+}
+.mapa {
+  margin-bottom: 5em;
+}

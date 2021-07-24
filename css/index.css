@@ -182,7 +182,7 @@ a:link {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    font-size: 1em;
+    font-size: 0.5em;
   }
 
   .footer__info {
@@ -194,12 +194,60 @@ a:link {
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
+    width: auto;
+    margin: 0;
   }
 
   .footer__texto {
     text-align: center;
   }
 }
+.contacto {
+  top: -0.5em;
+  height: 55em;
+  color: #ffffff;
+}
+
+.contacto h2 {
+  margin-top: 1em;
+}
+
+.encabezadoCTO {
+  height: 5em;
+}
+
+.formulario .textBox {
+  color: #ffffff;
+  background-color: transparent;
+  border: #fece2f 1px S;
+  height: 3em;
+  border-color: transparent;
+}
+
+.formulario input:hover {
+  border-color: #fece2f;
+  appearance: #fece2f;
+}
+.formulario input:hover:focus-visible {
+  border-color: #fece2f;
+  appearance: #fece2f;
+}
+
+.formulario .ciudad {
+  height: 2.5em;
+  color: #020202;
+  background-color: #fece2f;
+}
+
+.formulario .textarea {
+  color: #ffffff;
+  border: #fece2f 1px solid;
+}
+
+.mapa {
+  margin-bottom: 5em;
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -226,6 +274,10 @@ p {
 }
 .navbar-nav .nav-item .nav-link:hover {
   border-bottom: solid 1px #fece2f;
+}
+
+.carta__comida--descripcion p {
+  color: #020202;
 }
 
 .footer p {
