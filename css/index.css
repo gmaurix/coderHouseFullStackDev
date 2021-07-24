@@ -182,7 +182,7 @@ a:link {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    font-size: 0.5em;
+    font-size: 0.9em;
   }
 
   .footer__info {
@@ -193,9 +193,9 @@ a:link {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     width: auto;
-    margin: 0;
+    margin: auto;
   }
 
   .footer__texto {
@@ -216,36 +216,54 @@ a:link {
   height: 5em;
 }
 
-.formulario .textBox {
-  color: #ffffff;
-  background-color: transparent;
-  border: #fece2f 1px S;
-  height: 3em;
-  border-color: transparent;
-}
-
-.formulario input:hover {
-  border-color: #fece2f;
-  appearance: #fece2f;
-}
-.formulario input:hover:focus-visible {
-  border-color: #fece2f;
-  appearance: #fece2f;
-}
-
-.formulario .ciudad {
-  height: 2.5em;
-  color: #020202;
-  background-color: #fece2f;
-}
-
-.formulario .textarea {
-  color: #ffffff;
-  border: #fece2f 1px solid;
-}
-
 .mapa {
   margin-bottom: 5em;
+}
+
+.textBox {
+  border: 0;
+  background-color: transparent;
+  color: white;
+  border-bottom: darkgoldenrod solid 0.5px;
+  flex-wrap: wrap;
+  margin: 2px;
+  padding: 10px;
+  width: 100%;
+  height: 50px;
+}
+.textBox:hover {
+  border-color: rgba(250, 248, 110, 0.664);
+}
+
+/*Estilos para el textArea del form*/
+.textarea {
+  color: white;
+  background-color: transparent;
+  width: 100%;
+  height: 100px;
+  padding: 10px;
+  margin-top: 2px;
+  border: darkgoldenrod solid 0.5px;
+}
+.textarea:hover {
+  border-color: rgba(250, 194, 110, 0.664);
+}
+
+/*Estilos para la elemento Select del Form*/
+#ciudad {
+  color: white;
+  border: 0;
+  border-bottom: darkgoldenrod solid 1 px;
+  width: 100%;
+  height: 50px;
+  background: transparent;
+}
+#ciudad:hover {
+  border-color: rgba(250, 194, 110, 0.664);
+}
+#ciudad option {
+  color: white;
+  background: black;
 }
 
 * {
