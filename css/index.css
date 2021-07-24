@@ -1,436 +1,229 @@
-/*Reset básico*/
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-}
-body {
-  background: url(../img/fondo.webp);
-  background-repeat: repeat;
-  background-attachment: fixed;
-  background-color: black;
+.frente_bar {
+  background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
+  display: flex;
+  height: auto;
+  width: 40vw;
+  margin-bottom: 40px;
 }
 
-/*Estilos para el body*/
-.contenido {
-  font-family: "Larsseit";
-  background: url(../img/fondo.webp);
-  background-repeat: repeat;
-  background-attachment: fixed;
-  background-color: black;
+.inicio {
+  position: relative;
   color: #ffffff;
+  height: 55em;
 }
-/*Fuente local del proyecto*/
-@font-face {
-  font-family: "Larsseit";
-  src: url("../fuentes/larsseit/Larsseit-Medium.otf");
+.inicio .inicio__titulo {
+  font-size: 2.5em;
 }
-@font-face {
-  font-family: "Lasserit";
-  src: url("../fuentes/larsseit/Larsseit-Light.otf");
-}
-/* efecto smoot para el evento scrool-behavior 
-cuando se navega en la misma seccion de una pagina*/
-:root {
-  scroll-behavior: smooth;
+.inicio .inicio__info {
+  z-index: 150;
+  font-size: 1.5em;
 }
 
-/*Estilos para la grilla que contiene los elementos de cada Seccion*/
-#grilla {
-  display: grid;
-  grid-template-areas:
-    "header header header"
-    "nav nav nav"
-    "inicio inicio inicio"
-    "nosotros nosotros nosotros"
-    "galeria galeria galeria"
-    "footer footer footer";
-  grid-template-rows: auto auto;
-  grid-template-columns: 100px 100px;
-  row-gap: 5px;
-  column-gap: 5px;
-  margin: 0;
-  height: 30vh;
+.galeria {
+  height: 45em;
+  background-color: #fece2f;
+  margin: 1em;
+  overflow: scroll;
 }
-
-/**/
-/*Estilo para el Header*/
-header {
-  grid-area: header;
-  display: grid;
-  justify-items: center;
-  align-items: center;
-  margin-top: 25px;
-  height: 50px;
-  width: 100vw;
-}
-
-/*Estilos para el logo */
-/*Estilo para darle tamaño al logo*/
-.encabezado__logo {
-  width: 180px;
-  height: 80px;
-  /*  margin-top: -10px; */
-}
-
-/*Estilo para imagen iguanita*/
-/* .img__iguana {
-  display: grid;
-  justify-content: center;
-  align-items: center;
-}
- */
-/**/
-/* Estilos para la Barra de navegación*/
-/*Estilos para el elemento Nav*/
-nav {
-  grid-area: nav;
-  height: 80px;
-  padding: 10px;
-  display: grid;
-  gap: 5px;
-  justify-items: center;
-  align-items: center;
-}
-/*Estilos para la clase del elemento <ul> de la barra de navegacion */
-.encabezado__navbar {
-  display: grid;
-  grid-template-columns: repeat(5, 150px);
-  list-style-type: none;
-}
-/*Estilos para la clase del elemento <a> del nav */
-.encabezado__navbar--item a {
-  padding: 10px;
-  text-decoration: none;
-  font-size: 1.2em;
-  color: #fff;
-  border-radius: 10px;
-}
-/* Animacion para la barra de Navegacion*/
-.encabezado__navbar--item a:hover {
-  padding: 10px;
-  background-color: #f8d407;
-  color: rgb(8, 8, 8);
-  transition: all 0.8s ease;
-}
-
-/**/
-/* ESTILOS PARA el main de la página <index.html>*/
-
-/**/
-/*ESTILO PARA LA SECCION Inicio*/
-.contenido__inicio {
-  grid-area: inicio;
-  width: 100%;
-  height: 100vh;
-}
-
-.inicio__titulo {
-  margin: 10px;
-  text-align: center;
-  font-size: 50px;
-}
-.inicio__info {
+.galeria .card {
+  border: none;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-bottom: 15px;
-  text-align: center;
-  margin-bottom: 10px;
-  font-family: "Lasserit";
-  width: 100%;
-}
-.inicio__info p {
-  width: 500px;
-}
-/*Estilos para la foto de frente del bar*/
-.art__imagen {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-/*Estilos para la foto del bar*/
-.art__imagen-bar {
-  margin-bottom: 10px;
-  width: 60%;
-  height: 70vh;
-}
-
-/**/
-/* ESTILO PARA SECCION Nosotros*/
-.nosotros {
-  grid-area: nosotros;
-  width: 100%;
-  height: 100vh;
-  display: flex;
+  flex-direction: row;
   justify-content: space-evenly;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: flex-start;
 }
-/*Definicion de posicion del titulo*/
-.nosotros__titulo {
-  text-align: center;
-  /* background-color:#f8d407 ; */
-}
-/*definicion del width del div */
-.nosotros__titulo--definicion {
-  width: 75%;
-}
-/*Estilos para el texto de Nosotros*/
-.nosotros__titulo--definicion p {
-  margin-left: 150px;
-  font-family: "Lasserit";
-}
-/*Estilos para la iguana*/
-.nosotros__titulo--definicion .figura_iguana {
-  width: 260px;
-  height: 240px;
-  margin-top: -120px;
-  margin-left: -100px;
-}
-/**/
-/* ESTILOS PARA LA Galeria*/
-/*estilos para section de la galeria*/
-section#galeria {
-  grid-area: galeria;
-  height: 600px;
-  display: grid;
-  /*   background-color: rgba(255, 255, 255, 0.164); */
-}
-/*estilos para el id del section galeria*/
-#galeria {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-  justify-items: center;
-  align-items: center;
-}
-/*estilos para los DIV de la galeria*/
-.galeria-foto {
-  margin-top: 25px;
-  width: 200px;
-  height: 200px;
-}
-/*estilo para el texto debajop de cafa foto de la galeria*/
-.galeria-foto p {
-  text-align: center;
-  color: #f8d407;
-  margin-top: 10px;
-  font-family: "Lasserit";
-}
-/* estilo para la etiqueta Img de la galeria*/
-.foto {
-  text-align: center;
+.galeria .card-img-top {
+  width: 12em;
+  background-color: transparent;
   border-radius: 10px;
-  box-shadow: 2px 2px 3px #141414;
-  width: 100%;
-  height: 75%;
-}
-/*transicion en las fotos de la galeria*/
-.foto:hover {
-  transform: scale(1.95, 1.95);
-  transition: all 1s;
+  box-shadow: 9px 9px 8px #383737;
 }
 
-/**/
-/* ESTILOS PARA SECCION Carta*/
-.carta {
-  margin: 0 auto;
-  padding: 10px;
-  height: 800px;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  gap: 10px;
-  margin-left: 30px;
-}
-/*estilos para el titulo de la carta*/
 .carta__titulo {
-  text-align: center;
-  letter-spacing: 3px;
+  /* background-color: $colorAmarrilo; */
+  color: #ffffff;
+  width: 50%;
   padding: 10px;
-  background-color: rgba(252, 236, 62);
-  margin: 25px;
-  color: black;
+  letter-spacing: 3px;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 10px;
 }
-/*para los <div> de categoria (chegusan, pizzas y bebidas)*/
+
+.accordion {
+  background-color: #020202;
+}
+.accordion .accordion-button {
+  background-color: #fece2f;
+  color: #020202;
+  font-size: 1em;
+  text-align: center;
+}
+.accordion .accordion-body {
+  background-color: black;
+}
+.accordion .accordion-body .list-carta {
+  background-color: #fece2f;
+}
+.accordion .accordion-body ul {
+  list-style-type: none;
+  background-color: #fece2f;
+}
+
 .carta__categoria {
+  background-color: #fece2f;
   font-size: small;
-  background-color: rgba(252, 236, 62);
   border-radius: 5px;
   width: 450px;
-  box-shadow: 1px 3px 3px 2px rgb(22, 22, 22);
+  box-shadow: 1px 3px 3px 2px #161616;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
 }
-/*estilo para el h2 (titulo de catergoria)*/
-.carta__categoria > h2 {
-  margin-bottom: 50px;
-  text-align: center;
-  color: black;
-}
-/*Estilo para los <div> que contienen los elementos la carta*/
+
 .carta__categoria--comida {
   border-radius: 5px;
-  display: flex;
   height: 120px;
+  display: flex;
   align-items: center;
-  font-family: "Lasserit";
 }
-/*Estilo para ordernar los elementos de la descripcion de los platos*/
-.carta__comida--descripcion {
-  color: rgb(0, 0, 0);
+.carta__categoria--comida .carta__comida--descripcion {
+  color: #020202;
+  width: 100%;
   font-weight: bold;
   display: flex;
   justify-content: space-evenly;
   flex-direction: row;
   flex-wrap: nowrap;
   align-items: center;
-  margin: 1px;
   border-bottom: 1px solid black;
 }
-.carta__comida--foto {
-  width: 120px;
+.carta__categoria--comida .carta__comida--descripcion .carta__comida--foto {
+  width: auto;
 }
-/*estilos para el nombre del plato*/
-.comida__nombre {
+.carta__categoria--comida .carta__comida--descripcion .carta__comida--foto .foto_comida {
+  margin-bottom: 5px;
+  height: 80px;
+  width: 90px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 4px 2px rgba(44, 45, 46, 0.781);
+}
+.carta__categoria--comida .carta__comida--descripcion .comida__nombre {
   width: 25%;
   display: flex;
   align-items: center;
   padding: 5px;
+  margin-left: 2em;
 }
-/*estilos para los ingredientes del plato*/
-.comida__receta {
+.carta__categoria--comida .carta__comida--descripcion .comida__receta {
   display: flex;
   align-items: center;
-  width: 180px;
+  width: 50%;
 }
-/*estilo para el precio del plato*/
-.comida__precio {
+.carta__categoria--comida .carta__comida--descripcion .comida__precio {
   margin: 0 auto;
   padding: 10px;
   text-align: center;
   display: flex;
+  width: 25%;
   align-items: center;
 }
-/*estilo parta la foto de los platos */
-.foto_comida {
-  height: 80px;
-  width: 90px;
-  margin-left: 10px;
-  border-radius: 10px;
-  box-shadow: 1px 2px 4px 2px rgb(59, 61, 63);
-}
-/**/
-/*Estilos para la carta de bebidas*/
-.carta__categoria-bebidas {
-  font-size: small;
-  background-color: rgba(252, 236, 62);
-  border-radius: 5px;
-  width: 450px;
-  box-shadow: 1px 3px 3px 2px rgb(22, 22, 22);
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-/* definicion del h2*/
-.carta__categoria-bebidas > h2 {
-  margin-bottom: 62px;
-  text-align: center;
-  color: black;
-}
-/*estilo para el <h3> dentro de cada elemento <ul>*/
-.carta__bebidas--sinAlcohol h3 {
-  text-decoration: underline;
-  margin-bottom: 10px;
-}
-/*estilos para la clase de los <div> que contienen las listas de bebidas*/
-.carta__bebidas--sinAlcohol {
+
+.footer {
+  grid-area: footer;
   font-family: "Lasserit";
-  color: black;
-  font-weight: bold;
+  bottom: auto;
+  width: 100%;
+  height: 5em;
   display: flex;
   justify-content: space-evenly;
+  align-content: center;
   flex-direction: row;
-  flex-wrap: nowrap;
-  align-items: center;
-  margin: 10px;
+  background-color: #fece2f;
 }
-.carta__bebidas--sinAlcohol ul {
+.footer .footer__info ul {
+  margin-top: 10px;
+  text-decoration: none;
   list-style-type: none;
-  width: 100%;
-  margin-left: 20px;
-}
-.bebidaPrecio {
-  padding-top: 20px;
+  text-decoration-color: #020202;
 }
 
-/**/
-/* ESTILOS PARA SECCION Contacto (formulario) */
+.footer__texto {
+  color: #020202;
+  margin-top: 10px;
+}
 
-.contacto {
-  display: flex;
-  justify-content: space-evenly;
-  flex-direction: row;
-  flex-wrap: wrap;
-  width: 100%;
-  height: 500px;
-  padding: 10px;
-  margin-top: 0;
-  margin-left: 0;
-  overflow: hidden;
+a:link {
+  text-decoration: none;
+  font-weight: bold;
 }
-/* estilos del titulo de seccion contacto*/
-.contacto__titulo {
-  height: 20px;
-  text-align: center;
-  padding: 40px;
-}
-/*estilos definidos para el div del Form*/
-.contacto__form {
-  width: 35%;
-}
-/*Estilos para el mapa de Seccion Contacto*/
-.mapa-responsive{
-  display: none;
-}
-#mapa {
-  margin-top: 20px;
-  height: 850px;
+
+.footer__texto--derechos {
   width: 400px;
-}
-/*Estilos para la direccion y telefono*/
-.direccion__telefonos {
-  margin-top: 100px;
-  height: 100px;
-  width: 250px;
-}
-.direccion__telefonos p {
-  font-size: 12px;
-  font-family: sans-serif;
-}
-.direccion__telefonos .strong {
-  text-decoration: underline;
-}
-.direccion__telefonos .figura_iguana {
-  margin-top: 20px;
-  width: 120px;
-  height: 120px;
+  margin: auto;
+  padding-right: 10px;
 }
 
-/**/
-/*ESTILOS PARA EL FORMULARIO*/
-/*estilos para los input text*/
+/*Estilos para iconos de social media*/
+.social-media .bx {
+  margin-top: 10px;
+  padding: 10px;
+  color: #020202;
+}
+.social-media .bx:hover {
+  transform: scale(1.55, 1.55);
+  transition: all 0.2s;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    font-size: 0.9em;
+  }
+
+  .footer__info {
+    text-align: center;
+  }
+
+  .social-media {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: nowrap;
+    width: auto;
+    margin: auto;
+  }
+
+  .footer__texto {
+    text-align: center;
+  }
+}
+.contacto {
+  top: -0.5em;
+  height: 55em;
+  color: #ffffff;
+}
+
+.contacto h2 {
+  margin-top: 1em;
+}
+
+.encabezadoCTO {
+  height: 5em;
+}
+
+.mapa {
+  margin-bottom: 5em;
+}
+
 .textBox {
   border: 0;
   background-color: transparent;
-  color: rgb(255, 255, 255);
+  color: white;
   border-bottom: darkgoldenrod solid 0.5px;
   flex-wrap: wrap;
   margin: 2px;
@@ -441,12 +234,10 @@ section#galeria {
 .textBox:hover {
   border-color: rgba(250, 248, 110, 0.664);
 }
+
 /*Estilos para el textArea del form*/
-.textarea:hover {
-  border-color: rgba(250, 194, 110, 0.664);
-}
 .textarea {
-  color: rgb(255, 255, 255);
+  color: white;
   background-color: transparent;
   width: 100%;
   height: 100px;
@@ -454,9 +245,13 @@ section#galeria {
   margin-top: 2px;
   border: darkgoldenrod solid 0.5px;
 }
+.textarea:hover {
+  border-color: rgba(250, 194, 110, 0.664);
+}
+
 /*Estilos para la elemento Select del Form*/
 #ciudad {
-  color: rgb(255, 255, 255);
+  color: white;
   border: 0;
   border-bottom: darkgoldenrod solid 1 px;
   width: 100%;
@@ -467,318 +262,51 @@ section#galeria {
   border-color: rgba(250, 194, 110, 0.664);
 }
 #ciudad option {
-  color: rgb(255, 255, 255);
+  color: white;
   background: black;
 }
 
-/*Estilos para botones del formulario*/
-.btn {
-  background-color: transparent;
-  color: rgb(255, 230, 7);
-  letter-spacing: 2px;
-  border: solid 1px rgb(17, 17, 17);
-  border-radius: 10px;
-  width: 90px;
-  height: 50px;
-}
-.btn:hover {
-  background-color: rgb(248, 212, 7);
-  color: rgb(8, 8, 8);
-  border: solid 1px rgb(248, 212, 7);
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
-/**/
-/* ESTILOS PARA EL Footer*/
-.footer {
-  grid-area: footer;
-  clear: both;
-  font-family: "Lasserit";
-  width: 100%;
-  height: 100px;
-  display: flex;
-  justify-content: space-evenly;
-  align-content: center;
-  flex-direction: row;
-  background-color: #fece2f;
-}
-.footer__texto {
-  color: black;
-  margin-top: 10px;
-}
-.footer__info ul {
-  margin-top: 10px;
-  text-decoration: none;
-  list-style-type: none;
-}
-.footer__texto--derechos {
-  width: 400px;
-  margin: auto;
-  padding-right: 10px;
-}
-/*Estilos para iconos de social media*/
-.social-media .bx {
-  margin-top: 10px;
-  padding: 10px;
-  color: #000000;
-}
-/*animacion iconos social-media*/
-.bx:hover {
-  transform: scale(1.55, 1.55);
-  transition: all 0.2s;
+.logo {
+  text-align: center;
+  width: 150px;
+  height: auto;
+  margin-bottom: 50px;
 }
 
-/**/
-/**/ /**/
-/*MEDIA QUERIES*/
-@media screen and (max-width: 775px) and (min-width: 200px) {
-  #grilla {
-    display: grid;
-    grid-template-areas:
-      "header "
-      "nav "
-      "inicio "
-      "nosotros "
-      "galeria "
-      "footer ";
-    grid-template-rows: 50px;
-    grid-template-columns: 150px;
-    margin: 0;
-    height: 20vh;
-  }
-
-  .nosotros__titulo--definicion .figura_iguana {
-    display: none;
-  }
-  .encabezado__logo {
-    margin-top: 40px;
-    width: 85px;
-    height: 45px;
-  }
-  .encabezado__navbar {
-    grid-area: nav;
-    position: fixed;
-    font-size: 0.8em;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 5px;
-  }
-  /*Estilos para la clase del elemento <a> del nav */
-  .encabezado__navbar--item a {
-    padding: 5px;
-    text-decoration: none;
-    font-size: 0.9em;
-    color: #fff;
-    border-radius: 5px;
-  }
-  /* Animacion para la barra de Navegacion*/
-  .encabezado__navbar--item a:hover {
-    padding: 5px;
-    background-color: #f8d407;
-    color: rgb(8, 8, 8);
-    transition: all 0.8s ease;
-  }
-
-  /**/
-  .contenido__inicio {
-    grid-area: inicio;
-    margin-top: 100px;
-    height: 60vh;
-  }
-  .inicio__titulo {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin-top: 10px;
-    height: auto;
-    width: 100vw;
-    font-size: 2.5em;
-  }
-  .inicio__info {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    align-items: center;
-    font-size: 0.9em;
-    width: 80vw;
-    margin-left: 10vw;
-  }
-  .inicio__info p {
-    width: 250px;
-  }
-  .art__imagen-bar {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    flex-wrap: wrap;
-    margin-top: 10px;
-    margin-left: 70vw;
-    width: 300px;
-    height: 200px;
-  }
-
-  /*Section nosotros*/
-  .nosotros {
-    z-index: -10;
-    grid-area: nosotros;
-    width: 100vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    flex-wrap: wrap;
-    margin-top: -20px;
-    height: 100vh;
-  }
-  .nosotros__titulo {
-    text-align: center;
-    font-size: 2.5em;
-    width: 100%;
-  }
-  .nosotros__definicion p {
-    text-align: center;
-    width: 250px;
-    margin: auto;
-  }
-
-  /*Section Galeria*/
-  section#galeria {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    width: 100vw;
-    overflow: scroll;
-  }
-  .galeria-foto {
-    align-items: center;
-    justify-content: space-evenly;
-    width: 100%;
-    height: 30vh;
-  }
-  .foto {
-    align-items: center;
-    justify-content: center;
-    margin-top: 50px;
-    margin-left: 40%;
-    height: 15vh;
-    width: 20vw;
-  }
-  .galeria-foto p {
-    text-align: center;
-    font-size: 0.8em;
-    width: 100%;
-  }
-
-  /*Section Carta*/
-  #carta {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin: 0 auto;
-    height: 80vh;
-    width: 250px;
-  }
-  .carta__titulo {
-    text-align: center;
-    font-size: 0.9em;
-    width: 100vw;
-  }
-  .carta__categoria,
-  .carta__categoria-bebidas {
-    height: 20vh;
-    width: 90vw;
-    text-shadow: 1px 1px 3px grey;
-  }
-  .carta__categoria--comida {
-    display: none;
-  }
-  .carta__bebidas {
-    display: none;
-  }
-
-  /*Catontacto*/
-  .contacto {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 100vw;
-    height: 110vh;
-  }
-  .contacto__titulo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 5vh;
-    text-align: center;
-    color: #f8d407;
-    margin-top: 20px;
-  }
-  .contacto__form {
-    width: 50vw;
-    height: 50vh;
-    font-size: 0.5em;
-  }
-  
-.btn:hover {
-  background-color: rgb(248, 212, 7);
-  color: rgb(8, 8, 8);
-  border: solid 1px rgb(248, 212, 7);
+h2 {
+  color: #ffffff;
 }
-  .direccion__telefonos {
-    display: flex;
-    justify-content: left;
-    align-items: stretch;
-    flex-direction: column;
-    width: 160px;
-    height: 100px;
-    margin-right: 60px;
-    margin-top: 50px;
-  }
-  .direccion__telefonos strong,
-  p {
-    font-size: 0.9em;
-    color: white;
-    text-decoration: none;
-  }
-  /*estilos mapa*/
-  .contacto__mapa{
-    display: none;
-  }
-  .mapa-responsive { 
-    display: flex;      
-    position: relative;   
-    margin-bottom: -50px;
-  }
-  .mapa-responsive iframe {
-    padding: 60px;
-    height: 100%;
-    width: 100%;    
-  }
-  .direccion__telefonos .figura_iguana {
-    display: none;
-  }
 
-  /* footer*/
-
-  .footer {
-    width: 100vw;
-    text-align: center;
-    font-size: 0.7em;
-    height: 10vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-  .footer__info,
-  .footer__texto {
-    display: none;
-  }
+p {
+  color: #ffffff;
 }
+
+.navbar-nav .nav-item .nav-link {
+  padding-bottom: 1px;
+}
+.navbar-nav .nav-item .nav-link:hover {
+  border-bottom: solid 1px #fece2f;
+}
+
+.carta__comida--descripcion p {
+  color: #020202;
+}
+
+.footer p {
+  color: #020202;
+}
+
+body {
+  background-image: url("../img/fondo.webp");
+  background-repeat: repeat;
+  background-color: #020202;
+  background-attachment: fixed;
+}
+
+/*# sourceMappingURL=index.css.map */

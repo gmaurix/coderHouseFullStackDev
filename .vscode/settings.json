@@ -1,4 +1,6 @@
 {
     "liveServer.settings.CustomBrowser": "chrome",
-    "liveServer.settings.port": 5501
+    "liveServer.settings.port": 5501,
+    "terminal.integrated.defaultProfile.windows": "Git Bash",
+    "git.ignoreLimitWarning": true
 }

@@ -1,0 +1,62 @@
+.contacto {
+  top: -0.5em;
+  height: 55em;
+  color: $colorLetraBlanca;
+}
+.contacto h2 {
+  margin-top: 1em;
+}
+.encabezadoCTO {
+  height: 5em;
+} 
+
+.mapa {
+  margin-bottom: 5em;
+}
+
+.textBox {
+  border: 0;
+  background-color: transparent;
+  color: rgb(255, 255, 255);
+  border-bottom: darkgoldenrod solid 0.5px;
+  flex-wrap: wrap;
+  margin: 2px;
+  padding: 10px;
+  width: 100%;
+  height: 50px;
+  &:hover {
+    border-color: rgba(250, 248, 110, 0.664);
+  }
+}
+
+/*Estilos para el textArea del form*/
+
+.textarea {
+  color: rgb(255, 255, 255);
+  background-color: transparent;
+  width: 100%;
+  height: 100px;
+  padding: 10px;
+  margin-top: 2px;
+  border: darkgoldenrod solid 0.5px;
+  &:hover {
+    border-color: rgba(250, 194, 110, 0.664);
+  }
+}
+/*Estilos para la elemento Select del Form*/
+#ciudad {
+  color: rgb(255, 255, 255);
+  border: 0;
+  border-bottom: darkgoldenrod solid 1 px;
+  width: 100%;
+  height: 50px;
+  background: transparent;
+  &:hover {
+    border-color: rgba(250, 194, 110, 0.664);
+  }
+  option {
+    color: rgb(255, 255, 255);
+    background: black;
+  }  
+}
+

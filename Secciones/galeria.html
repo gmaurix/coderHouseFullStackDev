@@ -3,58 +3,102 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet"/>
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'> <!--boxicons-->
-    <link rel="stylesheet" href="../css/index.css" />
+    
     <link rel="shortcut icon" href="../iguanaLogoAmarillo.ico" type="image/x-icon">
+    <!--Boostrap CDN-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" href="../css/index.css" />
     <title>Galeria</title>
   </head>
   <body>
-    <div id="grilla" class="contenido">
-      <header class="border" class="encabezado" >        
-        <img class="encabezado__logo" src="../img/iguanaLogoAmarillo.png" alt="logo">
-      </header>
-      <nav class="navbar" class="border">
-          <ul class="encabezado__navbar"><!-- barra de navegacion -->
-            <li class="encabezado__navbar--item"><a href="../index.html">Inicio</a></li>
-            <li class="encabezado__navbar--item"><a href="nosotros.html">Nosotros</a></li>
-            <li class="encabezado__navbar--item"><a href="galeria.html#galeria">Galeria</a></li>
-            <li class="encabezado__navbar--item"><a href="carta.html">Carta</a></li>
-            <li class="encabezado__navbar--item"><a href="contacto.html">Contacto</a></li>
-          </ul>
+   <div class="container" >
+     <content id="grilla" class="grilla" >
+      <header class="encabezado img-fluid" id="header">        
+        <br>    
+        <div class="logoIguana justify-content-center text-center" >
+                <img class="logo img-fluid" src="../img/iguanaLogoAmarillo.png" alt="logoIguanaBar">
+        </div>
+      </header>   
+        <!-- barra de navegacion con componente Boostrap NavBar-->
+        <nav class="navbar navbar-expand-lg justify-content-end mx-1 navbar-light col-12-sm ">              
+          <a href="#" class="navbar-brand bg-warning">
+             <span></span>
+          </a> 
+          <button class="navbar-toggler bg-warning " type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"  aria-controls="navbarNav"
+          aria-expanded="false">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+          <div class="collapse navbar-collapse " id="navbarNav">
+              <ul class="navbar-nav mx-auto ">                       
+                  <li class="nav-item navar__item bg-transparent"><a class="nav-link text-white" href="../index.html">INICIO</a></li>
+                  <li class="nav-item navar__item bg-transparent"><a class="nav-link text-white" href="nosotros.html">NOSOTROS</a></li>
+                  <li class="nav-item navar__item bg-transparent"><a class="nav-link text-white" href="galeria.html">GALERIA</a></li>
+                  <li class="nav-item navar__item bg-transparent"><a class="nav-link text-white" href="carta.html">CARTA</a></li>
+                  <li class="nav-item navar__item bg-transparent"><a class="nav-link text-white" href="contacto.html">CONTACTO</a></li>                
+                  <li class="nav-item navar__item bg-transparent"><a class="nav-link text-white" href="#">
+                  <div class="social-media-barra">
+                      <i class='bx bxl-whatsapp' ></i>
+                      <i class='bx bxl-facebook' ></i>
+                      <i class='bx bxl-instagram' ></i>
+                      <i class='bx bxl-twitter ' ></i>
+                    </div>
+                  </a></li>                
+                </ul>            
+             
+           </div>
       </nav>
-    </div>   
+      <br>  
+     
         <!--section de la galeria-->
-        <section id="galeria" class="border" class="galeria" >
-          <div class="galeria-foto"><img class="foto" src="../img/iguana/iguana_fuera.jpeg" alt=""> <p> Verano 2018</p></div>
-          <div class="galeria-foto"><img class="foto" src="../img/iguana/2018-01-06_dia.jpg" alt=""> <p> Verano 2019</p></div>
-          <div class="galeria-foto"><img class="foto" src="../img/iguana/iguana_fuera.jpeg" alt=""> <p> Verano 2020</p></div>
-          <div class="galeria-foto"><img class="foto" src="../img/iguana/2019-01-06.jpg" alt=""> <p> Verano 2021</p></div>  
-          <div class="galeria-foto"><img class="foto" src="../img/iguana/unsplash.jpg" alt=""> <p> Shows 2018</p></div>
-          <div class="galeria-foto"><img class="foto" src="../img/iguana/iguana_fuera.jpeg" alt=""> <p> Shows 2019 </p></div>  
-        </section>            
-        <footer class="footer"><!--COMIENZO footer-->
-          <div class="footer__info">
-            <ul>
-              <li class="footer__info--item">
-                <a href="#">Preguntas Frecuentes</a>
-              </li>
-            </ul>
-          </div>       
-          <!--iconos de social media-->
-          <div class="social-media">
-                  <i class='bx bxl-facebook' ></i>
-                  <i class='bx bxl-instagram' ></i>
-                  <i class='bx bxl-twitter' ></i>
-          </div> 
-          <div class="footer__texto">
-            <p class="footer__texto--derechos">
-              © 2021 Todos los Derechos Reservados | Iguana Bar
-            </p>
-            <p>Diego Mauricio Gautero - Coderhouse</p>
-          </div>
+        <section class="galeria justify-content-evenly d-flex flex-row flex-wrap " id="galeria">
+          <div class="container ">
+              <div class="card-columns ">
+                  <!-- <div class="card bg-transparent w-100">
+                      <a href="#" data-bs-toggle="modal" data-bs-target="#imagen" >
+                          <img src="./img/galeria/1.jpg" alt=""  class="card-img-top" >
+                      </a>
+                  </div>
+                  <div class="modal fade" id="imagen" tabindex="-1" role="dialog" aria-labelledby="imagen" aria-hidden="true">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                      </button>
+                      <div class="modal-dialog modal-dialog-centered" role="document">
+                          <img src="./img/galeria/1.jpg" class="img-fluid rounded" alt="">
+                      </div>
+                  </div> -->
+              </div>
+          </div>    
+      </section>          
+      <footer class="footer"><!--COMIENZO footer-->
+        <div class="footer__info">
+          <ul>
+            <li class="footer__info--item">
+              <a href="#">Preguntas Frecuentes</a>
+            </li>
+          </ul>
+        </div>       
+        <div class="social-media">
+                <i class='bx bxl-whatsapp' ></i>
+                <i class='bx bxl-facebook' ></i>
+                <i class='bx bxl-instagram' ></i>
+                <i class='bx bxl-twitter' ></i>
+        </div> 
+        <div class="footer__texto">
+          <p class="footer__texto--derechos">
+            © 2021 Todos los Derechos Reservados | Iguana Bar
+          </p>
+          <p>Diego Mauricio Gautero - Coderhouse</p>
+        </div>
       </footer><!--FINAL footer-->
+    </div> 
+      <script src="../js/galeria.js"></script>
   </body>
 </html>
