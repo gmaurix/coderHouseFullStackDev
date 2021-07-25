@@ -21,8 +21,6 @@
 }
 
 .nosotros {
-  position: relative;
-  color: #ffffff;
   height: 55em;
 }
 .nosotros .nosotros__titulo {
@@ -31,8 +29,7 @@
 }
 .nosotros .nosotros__historia {
   padding: 0.5em;
-  font-size: 1.2em;
-  overflow: hidden;
+  font-size: 1em;
   color: #fece2f;
 }
 

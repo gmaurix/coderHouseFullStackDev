@@ -1,6 +1,6 @@
+
+
 .nosotros{
-    position: relative;
-    color:$colorLetraBlanca;
     height: 55em;
     .nosotros__titulo{
         margin: 1.5em;
@@ -9,8 +9,7 @@
     }
     .nosotros__historia{
         padding: 0.5em;
-        font-size: 1.2em;
-        overflow: hidden;
+        font-size: 1em;       
         color: $colorAmarrilo;
         
         
