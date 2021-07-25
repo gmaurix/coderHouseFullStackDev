@@ -1,6 +1,5 @@
 
-.carta__titulo {
-  /* background-color: $colorAmarrilo; */
+.carta__titulo {  
   color: $colorLetraBlanca;
   width: 50%;
   padding: 10px;
@@ -11,22 +10,22 @@
 }
 .accordion {
   background-color: $colorLetraNegra;
-  .accordion-button {
-    background-color: $colorAmarrilo;
-    color: $colorLetraNegra;
-    font-size: 1em;
-    text-align: center;
-  }
-  .accordion-body {
-    background-color: black;
-    .list-carta {
+    .accordion-button {
       background-color: $colorAmarrilo;
+      color: $colorLetraNegra;
+      font-size: 1em;
+      text-align: center;
     }
-    ul {
-      list-style-type: none;
-      background-color: $colorAmarrilo;
+    .accordion-body {
+      background-color: black;
+        .list-carta {
+          background-color: $colorAmarrilo;
+        }
+        ul {
+          list-style-type: none;
+          background-color: $colorAmarrilo;
+        }
     }
-  }
 }
 
 .carta__categoria {
@@ -46,46 +45,49 @@
   height: 120px;
   display: flex;
   align-items: center;
-  .carta__comida--descripcion {
-    color: $colorLetraNegra;
-    width: 100%;
-    font-weight: bold;
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-items: center;
-    border-bottom: 1px solid black;
-    
-    .carta__comida--foto {
-      width: auto;
-      .foto_comida {
-        margin-bottom: 5px;
-        height: 80px;
-        width: 90px;
-        border-radius: 10px;
-        box-shadow: 2px 2px 4px 2px rgba(44, 45, 46, 0.781);
-      }
-    }
-    .comida__nombre {
-      width: 25%;
+    .carta__comida--descripcion {
+      color: $colorLetraNegra;
+      width: 100%;
+      font-weight: bold;
       display: flex;
+      justify-content: space-evenly;
+      flex-direction: row;
+      flex-wrap: nowrap;
       align-items: center;
-      padding: 5px;
-      margin-left: 2em;
+      border-bottom: 1px solid black;
+      
+        .carta__comida--foto {
+          width: auto;
+              .foto_comida {
+                margin-bottom: 5px;
+                height: 80px;
+                width: 90px;
+                border-radius: 10px;
+                box-shadow: 2px 2px 4px 2px rgba(44, 45, 46, 0.781);
+              }
+        }
+        .comida__nombre {
+          width: 25%;
+          display: flex;
+          align-items: center;
+          padding: 5px;
+          margin-left: 2em;
+        }
+        .comida__receta {
+          display: flex;
+          align-items: center;
+          width: 50%;
+            @media(max-width: 768px){
+              display: none;
+            }
+        }
+        .comida__precio {
+          margin: 0 auto;
+          padding: 10px;
+          text-align: center;
+          display: flex;
+          width: 25%;
+          align-items: center;
+        }
     }
-    .comida__receta {
-      display: flex;
-      align-items: center;
-      width: 50%;
-    }
-    .comida__precio {
-      margin: 0 auto;
-      padding: 10px;
-      text-align: center;
-      display: flex;
-      width: 25%;
-      align-items: center;
-    }
-  }
 }

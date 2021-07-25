@@ -1,0 +1,24 @@
+
+   .frente_bar{       
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        width: 35vw; 
+        height: auto; 
+        margin-top: 15em;      
+    }      
+  .inicio{
+      position: relative;
+      color:$colorLetraBlanca;
+      height: 55em;
+      
+     
+    .inicio__titulo{
+        font-size: 1.5em;   
+        
+    }
+    .inicio__info{       
+        font-size: 1em; 
+        padding: 1.5em;       
+    }
+ }

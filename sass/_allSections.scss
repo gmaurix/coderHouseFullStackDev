@@ -11,18 +11,15 @@
   }
   h2{
     color: $colorLetraBlanca;
+    font-size: 1.5em;
   }
   p{color: $colorLetraBlanca;}
-  .navbar-nav{
-    
-    .nav-item{
-     
+  .navbar-nav{    
+    .nav-item{     
       .nav-link{
-        padding-bottom: 1px;
-        
+        padding-bottom: 1.5em;        
         &:hover{
-          border-bottom: solid 1px $colorAmarrilo;
-                   
+          border-bottom: solid 1px $colorAmarrilo;                   
         }
       }
     }
@@ -31,6 +28,4 @@
   .footer p{
     color: $colorLetraNegra;
   }
- .nosotros {
-   height: 40em;
- }
+ 

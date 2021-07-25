@@ -1,0 +1,9 @@
+
+@mixin sizes($w,$H){
+    height: $H;
+    width: $w;
+}
+
+.nosotros{
+    @include sizes(100vh,100vw )
+}

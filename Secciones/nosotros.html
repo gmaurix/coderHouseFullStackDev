@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet"/>
+        
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'> <!--boxicons-->
     <link rel="shortcut icon" href="../iguanaLogoAmarillo.ico" type="image/x-icon">
     <!--Boostrap-->
@@ -17,7 +18,7 @@
     <title>Nosotros</title>
 </head>
 <body >
-  <div class="container" >
+  <div class="container-fluid" >
 <content id="grilla" class="grilla" >
   <header class="encabezado img-fluid" id="header">        
     <br>    
@@ -54,23 +55,25 @@
          
        </div>
   </nav>
-    <section id="nosotros" class="nosotros">
+    <section id="nosotros" class="nosotros text-center">
       <div>    
-      <h2 class="nosotros__titulo text-center justify-content-center">Nosotros</h2>
+      <h2 class="nosotros__titulo text-center justify-content-center">NOSOTROS</h2>
       <article class="nosotros_articulo justify-content-evenly text-center d-flex flex-row flex-wrap" >        
-        <img src="../img/galeria/1.jpg" style="height: 10em; width: 10em; padding: 5px;" class=" col  col-sm-8 col-md-8 col-lg-4 justify-content-lg-evenly">
-          <p class="text-center justify-content-evenly d-flex flex-row flex-nowrap mx-3  col-sm-12 col-md-8 col-lg-4">
-            Todo comenzó como una loca idea entre Martín y Gabi, quienes juntos a otros amigos como Fernando (Cabeza),
-            quien armó todo el proyecto del sonido y le dio una indentidad musical única a Iguana Bar, hicieron que esa loca idea fuera tomándo forma.
-            Habia que pensar un nombre, a Martín se le ocurrio el nombre de Iguana, por
-            la iguana autoctona de nuestra zona, y como quedaba perfecto el nombre, no tardaron en ponerse de acuerdo.
-            Iguana Bar tenia su propia identidad.
-          </p>
-          <p class="text-center justify-content-evenly d-flex flex-row flex-nowrap mx-3  col-sm-12 col-md-8 col-lg-4">        
-            Finalmente en noviembre del 2002 con la pintura y barniz todavía frescos, con toda la energía y buena onda decidieron
-            abrir las puertas con un objetivo de brindarle al publico la mejor antención, un
-            ambiente agradable, con mucha buena onda y la mejor música. 
-          </p>    
+      
+      <div class="d-flex flex-row flex-wrap col col-sm-12 col-md-12 col-lg-12 justify-content-lg-evenly">
+        <img class="col-sm-12 col-md-8 text-center d-flex flex-row flex-wrap img-fluid" src="../img/iguana/green-iguana2.png" style="height: 15em; width: 15em; padding: 5px;" loading="lazy">  
+        <p class="nosotros__historia d-flex flex-row flex-wrap text-center justify-content-end mx-1 col-sm-4 col-md-6 col-lg-8">
+          Todo comenzó como una loca idea entre Martín y Gabi, quienes juntos a Fernando -Cabeza-,
+          (quien armó todo el proyecto de sonido y le dio una indentidad musical única a Iguana Bar), 
+          hicieron que esa loca idea fuera tomándo forma. <br>
+          Habia que pensar un nombre, a Martín se le ocurrio el nombre de Iguana, por
+          la iguana de nuestra zona, y quedaba perfecto. <br>
+         Iguana Bar tenia su propia identidad. <br> <br>
+          En noviembre del 2002 con la pintura y barniz de la barra todavía frescos, con toda la energía y buena onda decidieron
+          abrir las puertas con el objetivo de brindarle a su publico la mejor antención, un
+          ambiente muy agradable, con mucha buena onda y la mejor música.         
+        </p> 
+      </div>          
       </article>
   </div>
 </section>

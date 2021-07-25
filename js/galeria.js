@@ -8,7 +8,7 @@ for(imagen of imagenes){
             <img src="../img/galeria/${imagen}.jpg" alt="imagen galeria" class="card-img-top" loading="lazy" >
         </a>
     </div>
-    <div class="modal fade" id="imagen${imagen}" tabindex="-1" role="dialog" aria-labelledby="imagen" aria-hidden="true">    <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal fade justify-content-center" id="imagen${imagen}" tabindex="-1" role="dialog" aria-labelledby="imagen" aria-hidden="true">    <div class="modal-dialog modal-dialog-centered" role="document">
               <img src="../img/galeria/${imagen}.jpg" class="img-fluid rounded" alt="imagen galeria" loading="lazy"> 
      </div>        
     `;}

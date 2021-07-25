@@ -1,9 +1,15 @@
+.nosotros {
+  height: 100vw;
+  width: 100vh;
+}
+
 .frente_bar {
   display: flex;
+  flex-direction: row;
+  align-content: center;
+  width: 35vw;
   height: auto;
-  width: 40vw;
-  height: auto;
-  margin-bottom: 40px;
+  margin-top: 15em;
 }
 
 .inicio {
@@ -12,11 +18,24 @@
   height: 55em;
 }
 .inicio .inicio__titulo {
-  font-size: 2.5em;
+  font-size: 1.5em;
 }
 .inicio .inicio__info {
-  z-index: 150;
-  font-size: 1.5em;
+  font-size: 1em;
+  padding: 1.5em;
+}
+
+.nosotros {
+  display: flex;
+}
+.nosotros .nosotros__titulo {
+  margin: 1.5em;
+}
+.nosotros .nosotros__historia {
+  padding: 0.5em;
+  font-size: 1.2em;
+  overflow: scroll;
+  color: #fece2f;
 }
 
 .galeria {
@@ -39,7 +58,6 @@
 }
 
 .carta__titulo {
-  /* background-color: $colorAmarrilo; */
   color: #ffffff;
   width: 50%;
   padding: 10px;
@@ -119,6 +137,11 @@
   display: flex;
   align-items: center;
   width: 50%;
+}
+@media (max-width: 768px) {
+  .carta__categoria--comida .carta__comida--descripcion .comida__receta {
+    display: none;
+  }
 }
 .carta__categoria--comida .carta__comida--descripcion .comida__precio {
   margin: 0 auto;
@@ -281,6 +304,7 @@ a:link {
 
 h2 {
   color: #ffffff;
+  font-size: 1.5em;
 }
 
 p {
@@ -288,7 +312,7 @@ p {
 }
 
 .navbar-nav .nav-item .nav-link {
-  padding-bottom: 1px;
+  padding-bottom: 1.5em;
 }
 .navbar-nav .nav-item .nav-link:hover {
   border-bottom: solid 1px #fece2f;
@@ -302,15 +326,12 @@ p {
   color: #020202;
 }
 
-.nosotros {
-  height: 40em;
-}
-
 body {
   background-image: url("../img/fondo.webp");
   background-repeat: repeat;
   background-color: #020202;
   background-attachment: fixed;
+  font-family: "Lato", sans-serif;
 }
 
 /*# sourceMappingURL=index.css.map */

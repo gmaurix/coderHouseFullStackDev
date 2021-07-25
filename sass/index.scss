@@ -1,14 +1,17 @@
-@import'listas';
-@import 'sectionInicio';
-@import'galeria';
+@import'mixin';
+@import 'listas';
+@import 'inicio';
+@import 'nosotros';
+@import 'galeria';
 @import 'carta';
 @import 'footer';
-@import'contacto';
-@import 'allSection';
+@import 'contacto';
+@import 'allSections';
 
 body{
     background-image: url("../img/fondo.webp"); 
     background-repeat: repeat;
     background-color:$colorLetraNegra;
     background-attachment: fixed;
+    font-family: 'Lato', sans-serif;
 }
