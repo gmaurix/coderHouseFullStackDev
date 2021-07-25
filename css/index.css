@@ -1,8 +1,3 @@
-.nosotros {
-  height: 100vw;
-  width: 100vh;
-}
-
 .frente_bar {
   display: flex;
   flex-direction: row;
@@ -26,15 +21,18 @@
 }
 
 .nosotros {
-  display: flex;
+  position: relative;
+  color: #ffffff;
+  height: 55em;
 }
 .nosotros .nosotros__titulo {
   margin: 1.5em;
+  text-align: center;
 }
 .nosotros .nosotros__historia {
   padding: 0.5em;
   font-size: 1.2em;
-  overflow: scroll;
+  overflow: hidden;
   color: #fece2f;
 }
 
@@ -92,7 +90,7 @@
   font-size: small;
   border-radius: 5px;
   width: 450px;
-  box-shadow: 1px 3px 3px 2px #161616;
+  box-shadow: 4px 5px 2px #161616;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -312,7 +310,7 @@ p {
 }
 
 .navbar-nav .nav-item .nav-link {
-  padding-bottom: 1.5em;
+  padding-bottom: 0.5em;
 }
 .navbar-nav .nav-item .nav-link:hover {
   border-bottom: solid 1px #fece2f;
