@@ -2,15 +2,21 @@
   display: flex;
   flex-direction: row;
   align-content: center;
-  width: 35vw;
+  width: 55%;
   height: auto;
-  margin-top: 15em;
+  margin-top: 1em;
+}
+@media (max-width: 768px) {
+  .frente_bar {
+    width: 100vw;
+    height: auto;
+  }
 }
 
 .inicio {
   position: relative;
   color: #ffffff;
-  height: 55em;
+  height: 65em;
 }
 .inicio .inicio__titulo {
   font-size: 1.5em;
@@ -35,7 +41,7 @@
 
 .galeria {
   height: 45em;
-  background-color: #fece2f;
+  background-color: transparent;
   margin: 1em;
   overflow: scroll;
 }
@@ -49,7 +55,6 @@
   width: 12em;
   background-color: transparent;
   border-radius: 10px;
-  box-shadow: 9px 9px 8px #383737;
 }
 
 .carta__titulo {
@@ -321,12 +326,45 @@ p {
   color: #020202;
 }
 
+:root {
+  scroll-behavior: smooth;
+}
+
 body {
   background-image: url("../img/fondo.webp");
   background-repeat: repeat;
   background-color: #020202;
   background-attachment: fixed;
   font-family: "Lato", sans-serif;
+}
+
+.flotante {
+  display: none;
+}
+@media (max-width: 768px) {
+  .flotante {
+    position: fixed;
+    z-index: 600;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    right: 30px;
+    bottom: 100px;
+    text-align: center;
+    font-size: 34px;
+    background-color: #00E676;
+    color: #ffffff;
+    box-shadow: 3px 3px 3px #363535;
+  }
+  .flotante:hover {
+    color: #ffffff;
+    background-color: #020202;
+    transition: all 1s;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */

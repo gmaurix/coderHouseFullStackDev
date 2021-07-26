@@ -3,14 +3,18 @@
         display: flex;
         flex-direction: row;
         align-content: center;
-        width: 35vw; 
+        width: 55%; 
         height: auto; 
-        margin-top: 15em;      
+        margin-top: 1em;  
+        @media (max-width: 768px) {
+            width: 100vw ;
+            height: auto;
+        }    
     }      
   .inicio{
       position: relative;
       color:$colorLetraBlanca;
-      height: 55em;
+      height: 65em;
       
      
     .inicio__titulo{

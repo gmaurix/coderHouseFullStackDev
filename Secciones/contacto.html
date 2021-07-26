@@ -41,27 +41,27 @@
                   <li class="nav-item navar__item bg-transparent"><a class="nav-link text-white" href="galeria.html">GALERIA</a></li>
                   <li class="nav-item navar__item bg-transparent"><a class="nav-link text-white" href="carta.html">CARTA</a></li>
                   <li class="nav-item navar__item bg-transparent"><a class="nav-link text-white" href="contacto.html">CONTACTO</a></li>                
-                  <li class="nav-item navar__item bg-transparent"><a class="nav-link text-white" href="#">
-                  <div class="social-media-barra">
-                      <i class='bx bxl-whatsapp' ></i>
-                      <i class='bx bxl-facebook' ></i>
-                      <i class='bx bxl-instagram' ></i>
-                      <i class='bx bxl-twitter ' ></i>
-                    </div>
-                  </a></li>                
-                </ul>            
-             
+                  <li class="nav-item navar__item bg-transparent">
+                    <div class="social-media-barra d-flex justify-content-center align-content-center mx-auto">                    
+                      <a href="https://api.whatsapp.com/send?phone=5493542619973" class="float" target="_blank">
+                        <i class='bx bxl-whatsapp text-light'></i></a> 
+                        <i class='bx bxl-facebook' ></i>
+                        <i class='bx bxl-instagram' ></i>
+                        <i class='bx bxl-twitter ' ></i>  
+                    </div>                     
+                  </li>                                 
+              </ul> 
            </div>
-      </nav>
+        </nav>
     <section class="contacto" id="contacto">
       <h2 class="contacto__titulo text-center">CONTACTO</h2>
                   <div class="contentForm justify-content-center text-center bg-transparent">
-                      <form class="formulario m-auto d-flex flex-column col- col-sm-12 col-md-8 bg-transparent" action="Entregable/index.html" method="post" enctype="multipart/form-data" >
+                      <form class="formulario m-auto d-flex flex-column col- col-sm-12 col-md-8 bg-transparent" action="contacto.php  " method="POST" enctype="multipart/form-data" >
                           <input class="textBox bg-transparent" type="text" name="nombre" placeholder="Nombre" width="10" id="nomb" required />
 
                           <input class="textBox bg-transparent " type="text" name="apellido" placeholder="Apellido" id="apel" required height="" />
 
-                          <input class="textBox bg-transparent" type="email" name="" placeholder="Tu Email" id="mail" required />
+                          <input class="textBox bg-transparent" type="email" name="email" placeholder="Tu Email" id="mail" required />
 
                           <input class="textBox bg-transparent" type="tel" name="telefono" placeholder="Telefono" id="telef" required />
 
@@ -92,7 +92,9 @@
         </ul>
       </div>       
       <div class="social-media">
-              <i class='bx bxl-whatsapp' ></i>
+        <a href="https://api.whatsapp.com/send?phone=5493542619973" class="float" target="_blank">
+          <i class='bx bxl-whatsapp' ></i>
+        </a>
               <i class='bx bxl-facebook' ></i>
               <i class='bx bxl-instagram' ></i>
               <i class='bx bxl-twitter' ></i>
@@ -106,6 +108,8 @@
     </footer><!--FINAL footer-->
     <!-- </content> -->
   </div>
-
+<a href="https://api.whatsapp.com/send?phone=5493542619973" class="flotante" target="_blank">
+            <i class='bx bxl-whatsapp' ></i>
+          </a>
 </body>
 </html>

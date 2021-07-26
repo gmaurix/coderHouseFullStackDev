@@ -4,18 +4,27 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
-    <meta name="description" content="Iguana Bar, ubicado en la Localidad de Salsacate">
+    <!--Fonts-->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'> <!--boxicons-->
-      <!--Boostrap-->
+    <!--Boostrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-  
+    <!--CSS principal-->
     <link rel="stylesheet" href="css/index.css" />
-
-    <title>Iguana Bar</title>
+    <!--Favicon-->
+    <link rel="shorcut icon" href="./iguanaLogoAmarillo.ico" type="image/x-icon">   
+    <!--Meta Description-->
+    <meta name="description" content= "Iguana Bar, ubicado en Salsacate, es el mejor lugar para cenar y probar tragos y vivir momentos muy agradables en familia, con la mejor atención y muy buenos precios" />
+    <!--Open Graph-->
+    <meta property="op:title" content="Iguana Bar| El mejor bar de Salsacate para pasar en familia o amigos">
+    <meta property="op:descripcion" content="El mejor lugar para cenar y probar tragos y vivir momentos muy agradables en familia, con la mejor atención y muy buenos precios">
+    <!--Keywords-->
+    <meta name="keywords" content="Bar para cenar, comidas ,comidas rapidas y ricas, tragos, buenos precios, agradables momentos entre amigo y familia">
+    <meta name="robots" content= "index, follow">
+    <title>Iguana Bar| El mejor bar de Salsacate para pasar en familia o amigos.</title>
   </head>
   <body>
      <!--SE APLICA BOOSTRAP A BARRA DE NAVEGACION Y ALINEACION DE TEXTO EN PARRAFO Y TITULO Y NAVAR-->
@@ -42,8 +51,8 @@
                   <li class="nav-item navar__item bg-transparent"><a class="nav-link text-white" href="index.html">INICIO</a></li>
                   <li class="nav-item navar__item bg-transparent"><a class="nav-link text-white" href="./Secciones/nosotros.html">NOSOTROS</a></li>
                   <li class="nav-item navar__item bg-transparent"><a class="nav-link text-white" href="./Secciones/galeria.html">GALERIA</a></li>
-                  <li class="nav-item navar__item bg-transparent"><a class="nav-link text-white" href="./Secciones/carta.html">CARTA</a></li>
-                  <li class="nav-item navar__item bg-transparent"><a class="nav-link text-white" href="./Secciones/contacto.html">CONTACTO</a></li>                
+                  <li class="nav-item navar__item bg-transparent"><a class="nav-link text-white" href="./Secciones/carta.html#carta">CARTA</a></li>
+                  <li class="nav-item navar__item bg-transparent"><a class="nav-link text-white" href="./Secciones/contacto.html#contacto">CONTACTO</a></li>                
                   <li class="nav-item navar__item bg-transparent"><a class="nav-link text-white" href="#">
                   <div class="social-media-barra">
                       <i class='bx bxl-whatsapp' ></i>
@@ -62,17 +71,17 @@
         
         <section id="inicio" class="inicio" >
           
-          <h2 class="inicio__titulo text-center">BIENVENIDOS</h2>       
+          <h1 class="inicio__titulo text-center">BIENVENIDOS A IGUANA BAR</h1>       
           <div class="inicio__info text-center">
-            <p class="text-center justify-content-center m-auto col-lg-8 copl-md-8 col-sm-8">
-              Abrimos nuestras puertas en el 2002, y desde entonces nuestro
-              principal objetivo,
-              ha sido brindarte la mejor antención para que disfrutes de un
-              ambiente agradable, con mucha buena onda y la mejor música.
+            <p class="text-center justify-content-center mx-auto col-lg-8 copl-md-8 col-sm-8">
+              Abrimos nuestras puertas en 2002, y desde entonces nuestro
+              principal objetivo, ha sido brindarte la mejor antención para que disfrutes de un
+              ambiente agradable con la familia o entre amigos, con mucha buena onda y la mejor música.
+              Nuestras pizzas son las mejores que vas a encontrar en todo Salsacate 
             </p>           
           </div>
           <div>
-            <img src="img/galeria/7.jpg" class="frente_bar justify-content-center text-center m-auto" alt="ingreso bar" loading="lazy">
+            <img src="img/galeria/7.jpg" class="img-fluid frente_bar justify-content-center text-center mx-auto" alt="ingreso bar" loading="lazy">
           </div>         
         </section> 
       </div><!--final de content-->    
@@ -85,7 +94,9 @@
           </ul>
         </div>       
         <div class="social-media">
-                <i class='bx bxl-whatsapp' ></i>
+          <a href="https://api.whatsapp.com/send?phone=5493542619973" class="float" target="_blank">
+            <i class='bx bxl-whatsapp' ></i>
+          </a>
                 <i class='bx bxl-facebook' ></i>
                 <i class='bx bxl-instagram' ></i>
                 <i class='bx bxl-twitter' ></i>
@@ -98,5 +109,9 @@
         </div>
       </footer><!--FINAL footer-->
   </div> 
+
+  <a href="https://api.whatsapp.com/send?phone=5493542619973" class="flotante" target="_blank">
+    <i class='bx bxl-whatsapp' ></i>
+  </a>
   </body>
 </html>

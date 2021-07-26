@@ -14,7 +14,7 @@
     font-size: 1.5em;
   }
   p{color: $colorLetraBlanca;}
-  .navbar-nav{    
+  .navbar-nav{ 
     .nav-item{     
       .nav-link{
         padding-bottom: 0.5em;        
@@ -23,6 +23,7 @@
         }
       }
     }
+   
   }
   .carta__comida--descripcion p{ color: $colorLetraNegra;}
   .footer p{

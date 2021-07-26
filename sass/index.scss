@@ -7,6 +7,10 @@
 @import 'footer';
 @import 'contacto';
 @import 'allSections';
+:root{
+    scroll-behavior: smooth;
+    
+}
 
 body{
     background-image: url("../img/fondo.webp"); 
@@ -14,4 +18,31 @@ body{
     background-color:$colorLetraNegra;
     background-attachment: fixed;
     font-family: 'Lato', sans-serif;
+}
+.flotante{
+    display: none;
+    @media (max-width:768px) {
+       
+        position: fixed;
+        z-index: 600;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        width: 25px;
+        height: 25px;
+        right: 30px;
+        bottom: 100px;
+        text-align: center;    
+        font-size: 34px;
+        background-color:$colorWsp ;
+        color: $colorLetraBlanca;
+        box-shadow: 3px 3px 3px rgb(54, 53, 53);
+        &:hover{
+            color:$colorLetraBlanca;
+            background-color: $colorLetraNegra;
+            transition: all 1s;
+        }
+    }
 }

@@ -1,6 +1,6 @@
 .galeria{
     height: 45em;
-    background-color: $colorAmarrilo;
+    background-color: transparent;
     margin: 1em;
     overflow: scroll;
 
@@ -14,7 +14,7 @@
     width: 12em;
     background-color: transparent;
     border-radius: 10px;
-    box-shadow: 9px 9px 8px rgb(56, 55, 55);
+    //box-shadow: 9px 9px 8px rgb(56, 55, 55);
   }
 
 }
