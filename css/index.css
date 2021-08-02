@@ -1,3 +1,4 @@
+/* --------------------- estilos para la img del inicio --------------------- */
 .frente_bar {
   display: flex;
   flex-direction: row;
@@ -13,37 +14,47 @@
   }
 }
 
+/* --------------------- estilos para la seccion inicio --------------------- */
 .inicio {
   position: relative;
   color: #ffffff;
   height: 65em;
+  /* ----------------- estilo para el title de seccion inicio ----------------- */
+  /* -------------------- estilo para el parrafo del inicio ------------------- */
 }
 .inicio .inicio__titulo {
   font-size: 1.5em;
 }
 .inicio .inicio__info {
-  font-size: 1em;
-  padding: 1.5em;
+  font-size: 1.5em;
+  padding: 1em;
 }
 
+/* -------------------- estilos para el seccion nosotros -------------------- */
 .nosotros {
-  height: 55em;
+  height: auto;
 }
 .nosotros .nosotros__titulo {
   margin: 1.5em;
   text-align: center;
 }
 .nosotros .nosotros__historia {
-  padding: 0.5em;
-  font-size: 1em;
+  padding: 0.9em;
+  font-size: 1.5em;
+  color: #fece2f;
+}
+.nosotros .nosotros__subtitulo {
   color: #fece2f;
 }
 
+/* --------------------- estilos para la seccion galeria -------------------- */
 .galeria {
   height: 45em;
+  width: 100%;
   background-color: transparent;
-  margin: 1em;
-  overflow: scroll;
+  margin: 0 auto;
+  overflow-y: auto;
+  /* -------- estilos para las card que contiene cada img de la galeria ------- */
 }
 .galeria .card {
   border: none;
@@ -57,6 +68,8 @@
   border-radius: 10px;
 }
 
+/* ----------------------- estilos para seccion Carta ----------------------- */
+/* -------------------------- estilo para el title -------------------------- */
 .carta__titulo {
   color: #ffffff;
   width: 50%;
@@ -67,8 +80,11 @@
   margin-bottom: 10px;
 }
 
+/* ------------------- estilos pra el compente .accordion ------------------- */
 .accordion {
   background-color: #020202;
+  /* ------------------- esilos para el button del accordion ------------------ */
+  /* ------------------- estilos para el body del accordion ------------------- */
 }
 .accordion .accordion-button {
   background-color: #fece2f;
@@ -87,6 +103,7 @@
   background-color: #fece2f;
 }
 
+/* ----------------- esitlos para cada categoria de la carta ---------------- */
 .carta__categoria {
   background-color: #fece2f;
   font-size: small;
@@ -99,11 +116,13 @@
   justify-content: center;
 }
 
+/* ---------------- estilos q se aplica a cada plato del menu --------------- */
 .carta__categoria--comida {
   border-radius: 5px;
   height: 120px;
   display: flex;
   align-items: center;
+  /* ------------------ estilo para la descripcion del plato ------------------ */
 }
 .carta__categoria--comida .carta__comida--descripcion {
   color: #020202;
@@ -115,9 +134,14 @@
   flex-wrap: nowrap;
   align-items: center;
   border-bottom: 1px solid black;
+  /* -------- estilos para la contenedor de la foto del plato---------------------------- */
+  /* -------------------- estilos para el nombre del plato -------------------- */
+  /* ----------- estilos para la descripcion de la receta del plato ----------- */
+  /* ------------------ estilo para el contenedor del precio ------------------ */
 }
 .carta__categoria--comida .carta__comida--descripcion .carta__comida--foto {
   width: auto;
+  /* --------------------- estilos para la foto del plato --------------------- */
 }
 .carta__categoria--comida .carta__comida--descripcion .carta__comida--foto .foto_comida {
   margin-bottom: 5px;
@@ -152,6 +176,7 @@
   align-items: center;
 }
 
+/* ------------------------- estilos para el footer ------------------------- */
 .footer {
   grid-area: footer;
   font-family: "Lasserit";
@@ -163,6 +188,10 @@
   align-content: center;
   flex-direction: row;
   background-color: #fece2f;
+}
+.footer .footer__info--item {
+  color: black;
+  text-decoration: black;
 }
 .footer .footer__info ul {
   margin-top: 10px;
@@ -225,6 +254,7 @@ a:link {
     text-align: center;
   }
 }
+/* ------------------------ estilos secccion contacto ----------------------- */
 .contacto {
   top: -0.5em;
   height: 55em;
@@ -239,10 +269,12 @@ a:link {
   height: 5em;
 }
 
+/* ---------------------- estilo para el mapa de google --------------------- */
 .mapa {
   margin-bottom: 5em;
 }
 
+/* -------------------- estilos para los textBox del Form ------------------- */
 .textBox {
   border: 0;
   background-color: transparent;
@@ -295,6 +327,7 @@ a:link {
   margin: 0;
 }
 
+/* -------------------------- estilos para el logo -------------------------- */
 .logo {
   text-align: center;
   width: 150px;
@@ -302,20 +335,27 @@ a:link {
   margin-bottom: 50px;
 }
 
+/* ------------------- estilos para los h2 de cada pagina ------------------- */
 h2 {
   color: #ffffff;
   font-size: 1.5em;
 }
 
+/* --------------- color de letra blanca para cada etiqueta p --------------- */
 p {
   color: #ffffff;
 }
 
+/* ------------- estilos para el menu de navegacion de cada page ------------ */
 .navbar-nav .nav-item .nav-link {
-  padding-bottom: 0.5em;
+  padding-bottom: 0.1em;
 }
 .navbar-nav .nav-item .nav-link:hover {
   border-bottom: solid 1px #fece2f;
+}
+.navbar-nav .social-media-barra {
+  display: flex;
+  flex-direction: row;
 }
 
 .carta__comida--descripcion p {
@@ -330,6 +370,7 @@ p {
   scroll-behavior: smooth;
 }
 
+/* ------------------ imagen de fono para el body del sitio ----------------- */
 body {
   background-image: url("../img/fondo.webp");
   background-repeat: repeat;
@@ -338,6 +379,10 @@ body {
   font-family: "Lato", sans-serif;
 }
 
+/*
+estilos para el boton flotante de
+que aparece en version mobile
+*/
 .flotante {
   display: none;
 }

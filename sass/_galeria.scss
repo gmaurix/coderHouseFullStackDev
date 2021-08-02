@@ -1,20 +1,23 @@
+
+/* --------------------- estilos para la seccion galeria -------------------- */
 .galeria{
     height: 45em;
+    width: 100%;
     background-color: transparent;
-    margin: 1em;
-    overflow: scroll;
+    margin:0 auto;
+    overflow-y: auto;
+/* -------- estilos para las card que contiene cada img de la galeria ------- */
+  .card {
+        border: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+      }
+      .card-img-top {
+        width: 12em;
+        background-color: transparent;
+        border-radius: 10px;
+        //box-shadow: 9px 9px 8px rgb(56, 55, 55);
+      }
 
-.card {
-    border: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-  }
-  .card-img-top {
-    width: 12em;
-    background-color: transparent;
-    border-radius: 10px;
-    //box-shadow: 9px 9px 8px rgb(56, 55, 55);
-  }
-
-}
+    }

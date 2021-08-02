@@ -3,28 +3,36 @@
     padding: 0;
     margin: 0;
   }
+  /* -------------------------- estilos para el logo -------------------------- */
   .logo {
     text-align: center;
     width: 150px;
     height: auto;
     margin-bottom: 50px;
   }
+  /* ------------------- estilos para los h2 de cada pagina ------------------- */
   h2{
     color: $colorLetraBlanca;
     font-size: 1.5em;
   }
+  /* --------------- color de letra blanca para cada etiqueta p --------------- */
   p{color: $colorLetraBlanca;}
+  /* ------------- estilos para el menu de navegacion de cada page ------------ */
   .navbar-nav{ 
     .nav-item{     
       .nav-link{
-        padding-bottom: 0.5em;        
-        &:hover{
+        padding-bottom: 0.1em;        
+        &:hover{          
           border-bottom: solid 1px $colorAmarrilo;                   
         }
       }
     }
-   
+    .social-media-barra{
+      display: flex;
+      flex-direction: row;
+    }
   }
+  
   .carta__comida--descripcion p{ color: $colorLetraNegra;}
   .footer p{
     color: $colorLetraNegra;

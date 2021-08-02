@@ -1,4 +1,5 @@
-
+/* ----------------------- estilos para seccion Carta ----------------------- */
+/* -------------------------- estilo para el title -------------------------- */
 .carta__titulo {  
   color: $colorLetraBlanca;
   width: 50%;
@@ -8,14 +9,17 @@
   margin: 0 auto;
   margin-bottom: 10px;
 }
+/* ------------------- estilos pra el compente .accordion ------------------- */
 .accordion {
   background-color: $colorLetraNegra;
+  /* ------------------- esilos para el button del accordion ------------------ */
     .accordion-button {
       background-color: $colorAmarrilo;
       color: $colorLetraNegra;
       font-size: 1em;
       text-align: center;
     }
+    /* ------------------- estilos para el body del accordion ------------------- */
     .accordion-body {
       background-color: black;
         .list-carta {
@@ -27,7 +31,7 @@
         }
     }
 }
-
+/* ----------------- esitlos para cada categoria de la carta ---------------- */
 .carta__categoria {
   background-color: $colorAmarrilo;
   font-size: small;
@@ -39,13 +43,14 @@
   flex-wrap: wrap;
   justify-content: center;
 }
-
+/* ---------------- estilos q se aplica a cada plato del menu --------------- */
 .carta__categoria--comida {
   border-radius: 5px;
   height: 120px;
   display: flex;
   align-items: center;
-    .carta__comida--descripcion {
+  /* ------------------ estilo para la descripcion del plato ------------------ */
+  .carta__comida--descripcion {
       color: $colorLetraNegra;
       width: 100%;
       font-weight: bold;
@@ -55,10 +60,11 @@
       flex-wrap: nowrap;
       align-items: center;
       border-bottom: 1px solid black;
-      
+      /* -------- estilos para la contenedor de la foto del plato---------------------------- */
         .carta__comida--foto {
           width: auto;
-              .foto_comida {
+        /* --------------------- estilos para la foto del plato --------------------- */
+            .foto_comida {
                 margin-bottom: 5px;
                 height: 80px;
                 width: 90px;
@@ -66,6 +72,7 @@
                 box-shadow: 2px 2px 4px 2px rgba(44, 45, 46, 0.781);
               }
         }
+       /* -------------------- estilos para el nombre del plato -------------------- */
         .comida__nombre {
           width: 25%;
           display: flex;
@@ -73,6 +80,7 @@
           padding: 5px;
           margin-left: 2em;
         }
+        /* ----------- estilos para la descripcion de la receta del plato ----------- */
         .comida__receta {
           display: flex;
           align-items: center;
@@ -81,6 +89,7 @@
               display: none;
             }
         }
+        /* ------------------ estilo para el contenedor del precio ------------------ */
         .comida__precio {
           margin: 0 auto;
           padding: 10px;

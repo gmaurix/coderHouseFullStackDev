@@ -1,3 +1,4 @@
+/* ------------------------- estilos para el footer ------------------------- */
 .footer {
     grid-area: footer;
     font-family: "Lasserit";
@@ -9,12 +10,16 @@
     align-content: center;
     flex-direction: row;
     background-color: $colorAmarrilo;
-    
-  .footer__info ul {
+  .footer__info--item{
+    color: black;
+    text-decoration: black;
+  }
+  .footer__info ul{
     margin-top: 10px;
     text-decoration: none;
     list-style-type: none;
     text-decoration-color: $colorLetraNegra;
+      
   }
   }
   .footer__texto {

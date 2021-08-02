@@ -1,17 +1,19 @@
 
-
+/* -------------------- estilos para el seccion nosotros -------------------- */
 .nosotros{
-    height: 55em;
+    height: auto;
+    
     .nosotros__titulo{
         margin: 1.5em;
         text-align: center;
         
     }
-    .nosotros__historia{
-        padding: 0.5em;
-        font-size: 1em;       
+    .nosotros__historia {
+        padding: 0.9em;
+        font-size: 1.5em;       
+        color: $colorAmarrilo;        
+    }
+    .nosotros__subtitulo{
         color: $colorAmarrilo;
-        
-        
     }
 }

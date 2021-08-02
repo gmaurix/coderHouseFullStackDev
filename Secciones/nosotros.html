@@ -11,8 +11,8 @@
     <link rel="shortcut icon" href="../iguanaLogoAmarillo.ico" type="image/x-icon">
     <!--Boostrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+ 
+    
    
     <link rel="stylesheet" href="../css/index.css" />
     <title>Nosotros</title>
@@ -43,38 +43,45 @@
                 <li class="nav-item navar__item bg-transparent"><a class="nav-link text-white" href="galeria.html">GALERIA</a></li>
                 <li class="nav-item navar__item bg-transparent"><a class="nav-link text-white" href="carta.html">CARTA</a></li>
                 <li class="nav-item navar__item bg-transparent"><a class="nav-link text-white" href="contacto.html">CONTACTO</a></li>                
-                <li class="nav-item navar__item bg-transparent"><a class="nav-link text-white" href="#">
-                <div class="social-media-barra">
-                    <i class='bx bxl-whatsapp' ></i>
-                    <i class='bx bxl-facebook' ></i>
-                    <i class='bx bxl-instagram' ></i>
-                    <i class='bx bxl-twitter ' ></i>
+                <li class="nav-item navar__item bg-transparent">
+                  <div class="social-media-barra">
+                    <a class="nav-link text-white" href="#">   <i class='bx bxl-whatsapp' ></i></a>
+                    <a class="nav-link text-white" href="#">  <i class='bx bxl-facebook' ></i></a>
+                    <a class="nav-link text-white" href="#">   <i class='bx bxl-instagram' ></i> </a>
+                    <a class="nav-link text-white" href="#">   <i class='bx bxl-twitter ' ></i></a>
                   </div>
-                </a></li>                
-              </ul>            
-          
+                  </li>                
+                </ul>      
         </div>
     </nav>
-    <section id="nosotros" class="nosotros text-center">
+    <section id="nosotros" class="nosotros text-center flex-grow-1">
        <div>    
           <h2 class="nosotros__titulo text-center justify-content-center">NOSOTROS</h2>          
         </div>   
-          <div class="d-flex flex-wrap col-sm-12 col-md-12 col-lg-12 justify-content-center text-center">
-            <img class="col-sm-12 col-md-12 col-lg-12 img-fluid" src="../img/iguana/green-iguana2.png"
-             style="height: 15em; width: 15em; padding: 5px;" loading="lazy">  
-            <p class="nosotros__historia d-flex flex-row flex-wrap text-center justify-content-end mx-1 col-sm-12 col-md-8 col-lg-8">
-              Todo comenzó como una loca idea entre Martín y Gabi, quienes juntos a Fernando -Cabeza-,
-              (quien armó todo el proyecto de sonido y le dio una indentidad musical única a Iguana Bar), 
-              hicieron que esa loca idea fuera tomándo forma. <br>
-              Habia que pensar un nombre, a Martín se le ocurrio el nombre de Iguana, por
-              la iguana de nuestra zona, y quedaba perfecto. <br>
-               Iguana Bar tenia su propia identidad. <br> <br>
-              En noviembre del 2002 con la pintura y barniz de la barra todavía frescos, con toda la energía y buena onda decidieron
-              abrir las puertas con el objetivo de brindarle a su publico la mejor antención, un
-              ambiente muy agradable, con mucha buena onda y la mejor música.         
-            </p> 
-          </div>   
+         
+            <div class="col-sm-12 col-md-12 col-lg-12 align-content-between d-flex flex-row flex-wrap">
+              <p class="nosotros__historia d-flex flex-row flex-wrap text-center justify-content-end mx-1 col-sm-12 col-md-8 col-lg-8">
+                Todo comenzó como una loca idea entre Martín y Gabi, quienes juntos a Fernando -Cabeza-,
+                (quien armó todo el proyecto de sonido y le dio una indentidad musical única a Iguana Bar), 
+                hicieron que esa loca idea fuera tomándo forma.           
+              </p>
+              <img class="col-sm-12 col-md-12 col-lg-12 img-fluid mx-0" src="../img/galeria/8.jpg"
+              style="height: 15em; width: 15em;" alt="foto-entrada bar" loading="lazy">  
+            </div> 
+            <div class="col-sm-12 col-md-12 col-lg-12 align-content-between d-flex flex-row flex-wrap">
+              <img class="d-flex flex-row flex-nowrap img-fluid" src="../img/iguana/green-iguana2.png" alt="iguana mascota" style="height: 15em; width: 15em; margin-right: 1.5em; margin-top: 1.5em;" loading="lazy">  
+              <p class="nosotros__historia  mx-0 col-sm-12 col-md-8 col-lg-8">
+                ¿Por qué Iguana? <br>
+                Fue a Martín a quién se le  ocurrió darle el nombre, por
+                la iguana autóctona de nuestra zona, y quedaba perfecto .
+                Iguana Bar tenia su propia identidad.
+                En noviembre del 2002 con la pintura y barniz de la barra todavía frescos, con toda la energía y buena onda decidieron
+                abrir las puertas con el objetivo de brindarle a su publico la mejor antención, un
+                ambiente muy agradable, con mucha buena onda y la mejor música. </p>
+              </div>
+         
     </section>
+    
     <footer class="footer"><!--COMIENZO footer-->
       <div class="footer__info">
         <ul>
@@ -98,10 +105,11 @@
         <p>Diego Mauricio Gautero - Coderhouse</p>
       </div>
     </footer><!--FINAL footer-->
- </div>
+  </content>
+  </div>
  <a href="https://api.whatsapp.com/send?phone=5493542619973" class="flotante" target="_blank">
   <i class='bx bxl-whatsapp' ></i>
 </a>
-   
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
