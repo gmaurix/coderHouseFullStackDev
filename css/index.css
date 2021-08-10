@@ -3,7 +3,7 @@
   display: flex;
   flex-direction: row;
   align-content: center;
-  width: 55%;
+  width: 45%;
   height: auto;
   margin-top: 1em;
 }
@@ -181,8 +181,8 @@
   grid-area: footer;
   font-family: "Lasserit";
   bottom: auto;
-  width: 100%;
-  height: 5em;
+  width: 100vw;
+  height: 8em;
   display: flex;
   justify-content: space-evenly;
   align-content: center;
@@ -229,16 +229,24 @@ a:link {
 
 @media (max-width: 768px) {
   .footer {
-    width: 100vw;
-    height: auto;
+    width: 100%;
+    height: 15em;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     font-size: 0.9em;
+    overflow: hidden;
   }
 
   .footer__info {
     text-align: center;
+    font-size: 0.9em;
+  }
+  .footer__info a {
+    color: #020202;
+  }
+  .footer__info a:hover {
+    color: #474545;
   }
 
   .social-media {
@@ -247,11 +255,13 @@ a:link {
     justify-content: center;
     flex-wrap: nowrap;
     width: auto;
-    margin: auto;
+    margin: 0.5em;
   }
 
   .footer__texto {
     text-align: center;
+    font-size: 0.8em;
+    width: auto;
   }
 }
 /* ------------------------ estilos secccion contacto ----------------------- */
@@ -347,6 +357,9 @@ p {
 }
 
 /* ------------- estilos para el menu de navegacion de cada page ------------ */
+.navbar-nav {
+  width: auto;
+}
 .navbar-nav .nav-item .nav-link {
   padding-bottom: 0.1em;
 }
@@ -356,6 +369,7 @@ p {
 .navbar-nav .social-media-barra {
   display: flex;
   flex-direction: row;
+  flex-wrap: nowrap;
 }
 
 .carta__comida--descripcion p {
@@ -377,6 +391,8 @@ body {
   background-color: #020202;
   background-attachment: fixed;
   font-family: "Lato", sans-serif;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 /*
@@ -397,8 +413,8 @@ que aparece en version mobile
     border-radius: 50%;
     width: 25px;
     height: 25px;
-    right: 30px;
-    bottom: 100px;
+    right: 10px;
+    bottom: 2%;
     text-align: center;
     font-size: 34px;
     background-color: #00E676;

@@ -18,7 +18,7 @@
   /* --------------- color de letra blanca para cada etiqueta p --------------- */
   p{color: $colorLetraBlanca;}
   /* ------------- estilos para el menu de navegacion de cada page ------------ */
-  .navbar-nav{ 
+  .navbar-nav{ width: auto;
     .nav-item{     
       .nav-link{
         padding-bottom: 0.1em;        
@@ -30,6 +30,7 @@
     .social-media-barra{
       display: flex;
       flex-direction: row;
+      flex-wrap: nowrap;
     }
   }
   

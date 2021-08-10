@@ -1,10 +1,11 @@
 /* ------------------------- estilos para el footer ------------------------- */
 .footer {
+
     grid-area: footer;
     font-family: "Lasserit";
     bottom: auto;
-    width: 100%;
-    height: 5em;
+    width: 100vw;
+    height: 8em;
     display: flex;
     justify-content: space-evenly;
     align-content: center;
@@ -40,22 +41,33 @@
     margin-top: 10px;
     padding: 10px;
     color:$colorLetraNegra;
+    
         &:hover{
             transform: scale(1.55, 1.55);
             transition: all 0.2s;
+            
         }
   }
   @media(max-width: 768px){
     .footer {
-        width: 100vw;
-        height: auto;
+        width: 100%;
+        height: 15em;
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
         font-size: 0.9em;
+        overflow: hidden;
       }
       .footer__info {
         text-align: center;
+        font-size: 0.9em;
+          a{
+            color: $colorLetraNegra;            
+            &:hover{
+              color: rgb(71, 69, 69);
+            }
+            
+           }
       }
       .social-media {
         display: flex;
@@ -63,9 +75,11 @@
         justify-content: center;
         flex-wrap: nowrap;
         width: auto;
-        margin: auto;
+        margin: 0.5em;
       }
       .footer__texto {
         text-align: center;
+        font-size: 0.8em;
+        width: auto;
       }
   }
