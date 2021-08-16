@@ -13,6 +13,20 @@
 /* ---------------------- estilo para el mapa de google --------------------- */
 .mapa {
   margin-bottom: 5em;
+  .mobile_map{
+    display: none;
+  }
+  .desktop_map{
+    display: flex;
+  }
+  @media(max-width: 768px){
+    .mobile_map{
+      display: flex;
+    }
+    .desktop_map{
+      display: none;
+    }
+  }
 }
 /* -------------------- estilos para los textBox del Form ------------------- */
 .textBox {

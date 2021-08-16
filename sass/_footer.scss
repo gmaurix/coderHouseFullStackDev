@@ -55,7 +55,7 @@
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
-        font-size: 0.9em;
+        font-size: 1em;
         overflow: hidden;
       }
       .footer__info {
@@ -78,6 +78,11 @@
         margin: 0.5em;
       }
       .footer__texto {
+        text-align: center;
+        font-size: 0.8em;
+        width: auto;
+      }
+      .footer__info--item{
         text-align: center;
         font-size: 0.8em;
         width: auto;

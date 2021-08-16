@@ -234,7 +234,7 @@ a:link {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    font-size: 0.9em;
+    font-size: 1em;
     overflow: hidden;
   }
 
@@ -263,6 +263,12 @@ a:link {
     font-size: 0.8em;
     width: auto;
   }
+
+  .footer__info--item {
+    text-align: center;
+    font-size: 0.8em;
+    width: auto;
+  }
 }
 /* ------------------------ estilos secccion contacto ----------------------- */
 .contacto {
@@ -282,6 +288,20 @@ a:link {
 /* ---------------------- estilo para el mapa de google --------------------- */
 .mapa {
   margin-bottom: 5em;
+}
+.mapa .mobile_map {
+  display: none;
+}
+.mapa .desktop_map {
+  display: flex;
+}
+@media (max-width: 768px) {
+  .mapa .mobile_map {
+    display: flex;
+  }
+  .mapa .desktop_map {
+    display: none;
+  }
 }
 
 /* -------------------- estilos para los textBox del Form ------------------- */

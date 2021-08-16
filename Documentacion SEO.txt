@@ -1,0 +1,53 @@
+
+	Documentaci�n de Aplicaci�n de SEO 
+
+Se agrega la etiqueta "alt=" a todas las imagenes del sitio a excepción galeria. Tambien se añade la etiqueta loading="lazy", para 
+mejora el rendimiento web.
+
+Se agrega tecnicas SEO en index.html
+    <!--Meta Description-->
+    <meta name="description" content= "Iguana Bar, ubicado en Salsacate, es el mejor lugar para cenar y probar tragos y vivir momentos muy agradables en familia, con la mejor atenci�n y muy buenos precios" />
+    <!--Open Graph-->
+    <meta property="op:title" content="Iguana Bar| El mejor bar de Salsacate para pasar en familia o amigos">
+    <meta property="op:descripcion" content="El mejor lugar para cenar y probar tragos y vivir momentos muy agradables en familia, con la mejor atenci�n y muy buenos precios">
+    <!--Keywords-->
+    <meta name="keywords" content="Bar para cenar, comidas ,comidas rapidas y ricas, tragos, buenos precios, agradables momentos entre amigo y familia">
+    <meta name="robots" content= "index, follow">
+
+se agrega SEO en nosotros.html 
+    <!--Meta Description-->
+    <meta name="description" content= "Iguana Bar, ubicado en Salsacate, un lugar turístico lleno de tranquilidad y paz, es donde en 2002 nació este bar tan tradicional." />
+    <!--Open Graph-->
+    <meta property="og:title" content="Nosotros">    
+    <!--Keywords-->
+    <meta name="keywords" content="Bar para tragos, Muy buena antención,epxreciencia, excelentes precios, agradables momentos entre amigos y familia">
+    <meta name="robots" content= "index, follow"> 
+
+se agrega SEO en galeria.html
+    <!--Meta Description-->
+    <meta name="description" content= "Galeria de imagenes de Iguana Bar" />
+    <!--Open Graph-->
+    <meta property="og:title" content="Galeria">    
+    <!--Keywords--> 
+
+Se agregan SEO en carta.html
+    <!--Meta Description-->
+    <meta name="description" content= "Te presentamos nuestra carta, lomitos, hamburguesas, las mejores pizzas" />
+    <!--Open Graph-->
+    <meta property="og:title" content="Carta">
+    <meta property="og:descripcion" content="Las mejores pizzas, lomitos, hamburguesas, están en Iguana Bar. Veni a vivir momentos muy agradables entre familia y amigo, con la mejor atención y los mejores precios">
+    <!--Keywords-->
+    <meta name="keywords" content="Bar para cenar, pizzas, lomitos, hamburguesas, empanadas, tragos, los mejores precios">
+    <meta name="robots" content= "index, follow">      
+
+Se agregan SEO en carta.html 
+    <!--Meta Description-->
+    <meta name="description" content= "Iguana Bar, ubicado en Salsacate. Contactanos" />
+    <!--Open Graph-->
+    <meta property="og:title" content="Contacto">
+    <meta property="og:descripcion" content="El mejor lugar para cenar y probar tragos y vivir momentos muy agradables en familia, con la mejor atención y muy buenos precios">
+    <!--Keywords-->
+    <meta name="keywords" content="Bar para cenar, comidas ,comidas rapidas y ricas, tragos, buenos precios, agradables momentos entre amigo y familia">
+    <meta name="robots" content= "index, follow">    
+       
+
