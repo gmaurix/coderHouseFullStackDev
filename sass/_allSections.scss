@@ -18,10 +18,12 @@
   /* --------------- color de letra blanca para cada etiqueta p --------------- */
   p{color: $colorLetraBlanca;}
   /* ------------- estilos para el menu de navegacion de cada page ------------ */
-  .navbar-nav{ width: auto;
+  .navbar-nav{ width: auto;    
     .nav-item{     
+      padding-right: 5em;
       .nav-link{
         padding-bottom: 0.1em;        
+        font-size: 1.3em;
         &:hover{          
           border-bottom: solid 1px $colorAmarrilo;                   
         }

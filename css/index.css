@@ -360,8 +360,12 @@ p {
 .navbar-nav {
   width: auto;
 }
+.navbar-nav .nav-item {
+  padding-right: 5em;
+}
 .navbar-nav .nav-item .nav-link {
   padding-bottom: 0.1em;
+  font-size: 1.3em;
 }
 .navbar-nav .nav-item .nav-link:hover {
   border-bottom: solid 1px #fece2f;
